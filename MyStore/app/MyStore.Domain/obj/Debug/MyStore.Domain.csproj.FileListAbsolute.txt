@@ -1,0 +1,14 @@
+D:\BoxFusion\Sharp-Lite\Example\MyStore\app\MyStore.Domain\bin\Debug\MyStore.Domain.dll
+D:\BoxFusion\Sharp-Lite\Example\MyStore\app\MyStore.Domain\bin\Debug\MyStore.Domain.pdb
+D:\BoxFusion\Sharp-Lite\Example\MyStore\app\MyStore.Domain\bin\Debug\SharpLite.Domain.dll
+D:\BoxFusion\Sharp-Lite\Example\MyStore\app\MyStore.Domain\obj\Debug\MyStore.Domain.dll
+D:\BoxFusion\Sharp-Lite\Example\MyStore\app\MyStore.Domain\obj\Debug\MyStore.Domain.pdb
+D:\BoxFusion\Sharp-Lite\Example\MyStore\app\MyStore.Domain\obj\Debug\MyStore.Domain.csprojResolveAssemblyReference.cache
+D:\BoxFusion\webtest\MyStore\app\MyStore.Domain\bin\Debug\MyStore.Domain.dll
+D:\BoxFusion\webtest\MyStore\app\MyStore.Domain\bin\Debug\MyStore.Domain.pdb
+D:\BoxFusion\webtest\MyStore\app\MyStore.Domain\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\BoxFusion\webtest\MyStore\app\MyStore.Domain\bin\Debug\SharpLite.Domain.dll
+D:\BoxFusion\webtest\MyStore\app\MyStore.Domain\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\BoxFusion\webtest\MyStore\app\MyStore.Domain\obj\Debug\MyStore.Domain.csprojResolveAssemblyReference.cache
+D:\BoxFusion\webtest\MyStore\app\MyStore.Domain\obj\Debug\MyStore.Domain.dll
+D:\BoxFusion\webtest\MyStore\app\MyStore.Domain\obj\Debug\MyStore.Domain.pdb
