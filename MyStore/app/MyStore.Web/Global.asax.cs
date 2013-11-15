@@ -1,8 +1,10 @@
 ﻿using System.Web;
 using System.Web.Mvc;
+using System.Web.Optimization;
 using System.Web.Routing;
 using MyStore.Domain;
 using MyStore.Init;
+using MyStore.Web.App_Start;
 using MyStore.Web.Binders;
 using SharpLite.Web.Mvc.ModelBinder;
 
@@ -34,6 +36,8 @@ namespace MyStore.Web
 
             ModelBinders.Binders.DefaultBinder = new SharpModelBinder();
             ModelBinders.Binders.Add(typeof(Money), new MoneyBinder());
+
+            BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
     }
 }

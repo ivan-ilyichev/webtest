@@ -66,6 +66,7 @@
     <Compile Include="Queries\CustomerOrderSummaryDto.cs" />
     <Compile Include="Queries\FindActiveCustomers.cs" />
     <Compile Include="Queries\QueryForCustomerOrderSummaries.cs" />
+    <Compile Include="Security\Login.cs" />
     <Compile Include="Security\User.cs" />
     <Compile Include="Security\UserStore.cs" />
     <Compile Include="Validators\DataAnnotationsValidator.cs" />
