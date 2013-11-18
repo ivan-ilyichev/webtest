@@ -1,4 +1,5 @@
 ﻿using System.Web;
+using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
@@ -28,16 +29,21 @@ namespace MyStore.Web
 
         protected void Application_Start() {
             log4net.Config.XmlConfigurator.Configure();
+            DependencyResolverInitializer.Initialize();
 
             AreaRegistration.RegisterAllAreas();
+            GlobalConfiguration.Configure(WebApiConfig.Register);
+            FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
+            RouteConfig.RegisterRoutes(RouteTable.Routes);
+            BundleConfig.RegisterBundles(BundleTable.Bundles);
+            
             RegisterGlobalFilters(GlobalFilters.Filters);
-            RegisterRoutes(RouteTable.Routes);
-            DependencyResolverInitializer.Initialize();
+            
+            //RegisterRoutes(RouteTable.Routes);
 
             ModelBinders.Binders.DefaultBinder = new SharpModelBinder();
             ModelBinders.Binders.Add(typeof(Money), new MoneyBinder());
 
-            BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
     }
 }
