@@ -1,4 +1,8 @@
-﻿using MyStore.Domain;
+﻿using System;
+using System.Collections.Generic;
+using MyStore.Domain;
+using MyStore.Domain.Security;
+using MyStore.NHibernateProvider.Overrides;
 using NHibernate.Bytecode;
 using NHibernate.Cfg;
 using NHibernate.Dialect;
@@ -32,6 +36,23 @@ namespace MyStore.NHibernateProvider
                     .CurrentSessionContext<LazySessionContext>();
 
                 var mapper = new ConventionModelMapper();
+
+                mapper.AddMappings(new List<Type>()
+                {
+                    typeof (UserMapping),
+                    typeof (LoginMapping),
+                    typeof (UserClaimMapping)
+                });
+
+                var mapping = mapper.CompileMappingFor(new List<Type>()
+                {
+                    typeof (User),
+                    typeof (Login),
+                    typeof (UserClaim)
+                });
+                var lastCompiledXml = mapping.AsString();
+                
+                
                 mapper.WithConventions(configuration);
 
                 cache.SaveConfiguration(CONFIG_CACHE_KEY, configuration);

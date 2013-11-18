@@ -52,7 +52,10 @@ namespace MyStore.NHibernateProvider
         /// Determine if type implements IEntityWithTypedId<>
         /// </summary>
         public static bool IsEntity(Type type) {
-            return typeof(Entity).IsAssignableFrom(type) && typeof(Entity) != type && !type.IsInterface;
+            return 
+                typeof(Entity).IsAssignableFrom(type) && typeof(Entity) != type && !type.IsInterface
+                
+                ;
         }
 
         /// <summary>
