@@ -6,13 +6,3 @@ D:\BoxFusion\Sharp-Lite\Example\MyStore\app\MyStore.Tasks\bin\Debug\MyStore.Doma
 D:\BoxFusion\Sharp-Lite\Example\MyStore\app\MyStore.Tasks\obj\Debug\MyStore.Tasks.csprojResolveAssemblyReference.cache
 D:\BoxFusion\Sharp-Lite\Example\MyStore\app\MyStore.Tasks\obj\Debug\MyStore.Tasks.dll
 D:\BoxFusion\Sharp-Lite\Example\MyStore\app\MyStore.Tasks\obj\Debug\MyStore.Tasks.pdb
-D:\BoxFusion\webtest\MyStore\app\MyStore.Tasks\bin\Debug\MyStore.Tasks.dll
-D:\BoxFusion\webtest\MyStore\app\MyStore.Tasks\bin\Debug\MyStore.Tasks.pdb
-D:\BoxFusion\webtest\MyStore\app\MyStore.Tasks\bin\Debug\MyStore.Domain.dll
-D:\BoxFusion\webtest\MyStore\app\MyStore.Tasks\bin\Debug\SharpLite.Domain.dll
-D:\BoxFusion\webtest\MyStore\app\MyStore.Tasks\bin\Debug\Microsoft.AspNet.Identity.Core.dll
-D:\BoxFusion\webtest\MyStore\app\MyStore.Tasks\bin\Debug\MyStore.Domain.pdb
-D:\BoxFusion\webtest\MyStore\app\MyStore.Tasks\bin\Debug\Microsoft.AspNet.Identity.Core.xml
-D:\BoxFusion\webtest\MyStore\app\MyStore.Tasks\obj\Debug\MyStore.Tasks.csprojResolveAssemblyReference.cache
-D:\BoxFusion\webtest\MyStore\app\MyStore.Tasks\obj\Debug\MyStore.Tasks.dll
-D:\BoxFusion\webtest\MyStore\app\MyStore.Tasks\obj\Debug\MyStore.Tasks.pdb

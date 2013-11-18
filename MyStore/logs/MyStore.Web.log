@@ -1,58 +1,58 @@
-2013-11-18 09:48:46,138 [6] ?.lambda_method(:0) - NHibernate 3.3.1.4000 (3.3.3.SP1)
+2013-11-18 14:28:43,386 [6] ?.lambda_method(:0) - NHibernate 3.3.1.4000 (3.3.3.SP1)
 
-2013-11-18 09:48:46,151 [6] ?.lambda_method(:0) - hibernate-configuration section not found in application configuration file
+2013-11-18 14:28:43,401 [6] ?.lambda_method(:0) - hibernate-configuration section not found in application configuration file
 
-2013-11-18 09:48:46,152 [6] ?.lambda_method(:0) - Bytecode provider name : lcg
+2013-11-18 14:28:43,402 [6] ?.lambda_method(:0) - Bytecode provider name : lcg
 
-2013-11-18 09:48:46,153 [6] ?.lambda_method(:0) - Using reflection optimizer
+2013-11-18 14:28:43,403 [6] ?.lambda_method(:0) - Using reflection optimizer
 
-2013-11-18 09:48:46,180 [6] ?.lambda_method(:0) - checking mappings queue
+2013-11-18 14:28:43,433 [6] ?.lambda_method(:0) - checking mappings queue
 
-2013-11-18 09:48:46,181 [6] ?.lambda_method(:0) - processing one-to-many association mappings
+2013-11-18 14:28:43,433 [6] ?.lambda_method(:0) - processing one-to-many association mappings
 
-2013-11-18 09:48:46,181 [6] ?.lambda_method(:0) - processing one-to-one association property references
+2013-11-18 14:28:43,433 [6] ?.lambda_method(:0) - processing one-to-one association property references
 
-2013-11-18 09:48:46,181 [6] ?.lambda_method(:0) - processing foreign key constraints
+2013-11-18 14:28:43,433 [6] ?.lambda_method(:0) - processing foreign key constraints
 
-2013-11-18 09:48:46,185 [6] ?.lambda_method(:0) - processing filters (second pass)
+2013-11-18 14:28:43,437 [6] ?.lambda_method(:0) - processing filters (second pass)
 
-2013-11-18 09:48:46,208 [6] ?.lambda_method(:0) - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2013-11-18 14:28:43,465 [6] ?.lambda_method(:0) - Using dialect: NHibernate.Dialect.MsSql2008Dialect
 
-2013-11-18 09:48:46,231 [6] ?.lambda_method(:0) - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2013-11-18 14:28:43,495 [6] ?.lambda_method(:0) - Using dialect: NHibernate.Dialect.MsSql2008Dialect
 
-2013-11-18 09:48:46,266 [6] ?.lambda_method(:0) - Using dialect defined converter
+2013-11-18 14:28:43,530 [6] ?.lambda_method(:0) - Using dialect defined converter
 
-2013-11-18 09:48:46,266 [6] ?.lambda_method(:0) - Generate SQL with comments: disabled
+2013-11-18 14:28:43,531 [6] ?.lambda_method(:0) - Generate SQL with comments: disabled
 
-2013-11-18 09:48:46,268 [6] ?.lambda_method(:0) - Configuring ConnectionProvider
+2013-11-18 14:28:43,532 [6] ?.lambda_method(:0) - Configuring ConnectionProvider
 
-2013-11-18 09:48:46,269 [6] ?.lambda_method(:0) - Transaction factory: NHibernate.Transaction.AdoNetWithDistributedTransactionFactory
+2013-11-18 14:28:43,534 [6] ?.lambda_method(:0) - Transaction factory: NHibernate.Transaction.AdoNetWithDistributedTransactionFactory
 
-2013-11-18 09:48:46,270 [6] ?.lambda_method(:0) - Optimize cache for minimal puts: False
+2013-11-18 14:28:43,534 [6] ?.lambda_method(:0) - Optimize cache for minimal puts: False
 
-2013-11-18 09:48:46,270 [6] ?.lambda_method(:0) - Connection release mode: auto
+2013-11-18 14:28:43,535 [6] ?.lambda_method(:0) - Connection release mode: auto
 
-2013-11-18 09:48:46,270 [6] ?.lambda_method(:0) - Default batch fetch size: 1
+2013-11-18 14:28:43,535 [6] ?.lambda_method(:0) - Default batch fetch size: 1
 
-2013-11-18 09:48:46,271 [6] ?.lambda_method(:0) - Statistics: disabled
+2013-11-18 14:28:43,535 [6] ?.lambda_method(:0) - Statistics: disabled
 
-2013-11-18 09:48:46,271 [6] ?.lambda_method(:0) - Deleted entity synthetic identifier rollback: disabled
+2013-11-18 14:28:43,535 [6] ?.lambda_method(:0) - Deleted entity synthetic identifier rollback: disabled
 
-2013-11-18 09:48:46,271 [6] ?.lambda_method(:0) - Query translator: NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory
+2013-11-18 14:28:43,536 [6] ?.lambda_method(:0) - Query translator: NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory
 
-2013-11-18 09:48:46,273 [6] ?.lambda_method(:0) - Query language substitutions: {'true'='1', 'false'='0', 'yes'=''Y'', 'no'=''N''}
+2013-11-18 14:28:43,538 [6] ?.lambda_method(:0) - Query language substitutions: {'true'='1', 'false'='0', 'yes'=''Y'', 'no'=''N''}
 
-2013-11-18 09:48:46,274 [6] ?.lambda_method(:0) - cache provider: NHibernate.Cache.NoCacheProvider, NHibernate, Version=3.3.1.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2013-11-18 14:28:43,539 [6] ?.lambda_method(:0) - cache provider: NHibernate.Cache.NoCacheProvider, NHibernate, Version=3.3.1.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
 
-2013-11-18 09:48:46,275 [6] ?.lambda_method(:0) - Order SQL inserts for batching: enabled
+2013-11-18 14:28:43,539 [6] ?.lambda_method(:0) - Order SQL inserts for batching: enabled
 
-2013-11-18 09:48:46,275 [6] ?.lambda_method(:0) - Batcher factory: NHibernate.AdoNet.SqlClientBatchingBatcherFactory, NHibernate, Version=3.3.1.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2013-11-18 14:28:43,540 [6] ?.lambda_method(:0) - Batcher factory: NHibernate.AdoNet.SqlClientBatchingBatcherFactory, NHibernate, Version=3.3.1.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
 
-2013-11-18 09:48:46,276 [6] ?.lambda_method(:0) - Default entity-mode: Poco
+2013-11-18 14:28:43,541 [6] ?.lambda_method(:0) - Default entity-mode: Poco
 
-2013-11-18 09:48:46,276 [6] ?.lambda_method(:0) - Named query checking : enabled
+2013-11-18 14:28:43,541 [6] ?.lambda_method(:0) - Named query checking : enabled
 
-2013-11-18 09:48:46,288 [6] ?.lambda_method(:0) - building session factory
+2013-11-18 14:28:43,555 [6] ?.lambda_method(:0) - building session factory
 
-2013-11-18 09:48:46,517 [6] ?.lambda_method(:0) - no name configured
+2013-11-18 14:28:43,807 [6] ?.lambda_method(:0) - no name configured
 

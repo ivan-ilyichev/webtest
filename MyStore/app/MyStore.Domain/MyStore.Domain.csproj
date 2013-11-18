@@ -67,7 +67,10 @@
     <Compile Include="Queries\FindActiveCustomers.cs" />
     <Compile Include="Queries\QueryForCustomerOrderSummaries.cs" />
     <Compile Include="Security\Login.cs" />
+    <Compile Include="Security\LoginStore.cs" />
+    <Compile Include="Security\Role.cs" />
     <Compile Include="Security\User.cs" />
+    <Compile Include="Security\UserClaim.cs" />
     <Compile Include="Security\UserStore.cs" />
     <Compile Include="Validators\DataAnnotationsValidator.cs" />
   </ItemGroup>
