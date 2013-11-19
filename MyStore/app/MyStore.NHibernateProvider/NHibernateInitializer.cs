@@ -39,22 +39,22 @@ namespace MyStore.NHibernateProvider
 
                 mapper.AddMappings(new List<Type>()
                 {
-                    typeof (UserMapping),
-                    typeof (RoleMapping),
-                    typeof (LoginMapping),
-                    typeof (UserClaimMapping)
+                    typeof (NhIdentityUserMapping),
+                    typeof (NhIdentityUserRoleMapping),
+                    typeof (NhNhIdentityUserLoginMapping),
+                    typeof (NhIdentityUserClaimMapping)
                 });
                 var mapping = mapper.CompileMappingFor(new List<Type>()
                 {
-                    typeof (User),
-                    typeof (Role),
-                    typeof (Login),
-                    typeof (UserClaim)
+                    typeof (NhIdentityUser),
+                    typeof (NhIdentityUserRole),
+                    typeof (NhIdentityUserLogin),
+                    typeof (NhIdentityUserClaim)
                 });
                 var lastCompiledXml = mapping.AsString();
                 configuration.AddDeserializedMapping(mapping, "IdentityMappings");
 
-                mapper.WithConventions(configuration);
+                //mapper.WithConventions(configuration);
                 
                 cache.SaveConfiguration(CONFIG_CACHE_KEY, configuration);
             }

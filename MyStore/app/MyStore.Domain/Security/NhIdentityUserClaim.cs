@@ -7,17 +7,12 @@ using SharpLite.Domain;
 
 namespace MyStore.Domain.Security
 {
-    public class UserClaim : EntityWithTypedId<string>
+    public class NhIdentityUserClaim : EntityWithTypedId<int>
     {
-        public UserClaim()
-        {
-            Id = Guid.NewGuid().ToString();
-        }
-
         public virtual string ClaimType { get; set; }
 
         public virtual string ClaimValue { get; set; }
 
-        public virtual User User { get; set; }
+        public virtual NhIdentityUser User { get; set; }
     }
 }

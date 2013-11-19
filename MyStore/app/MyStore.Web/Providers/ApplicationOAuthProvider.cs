@@ -13,9 +13,9 @@ namespace MyStore.Web.Providers
     public class ApplicationOAuthProvider : OAuthAuthorizationServerProvider
     {
         private readonly string _publicClientId;
-        private readonly Func<UserManager<User>> _userManagerFactory;
+        private readonly Func<UserManager<NhIdentityUser>> _userManagerFactory;
 
-        public ApplicationOAuthProvider(string publicClientId, Func<UserManager<User>> userManagerFactory)
+        public ApplicationOAuthProvider(string publicClientId, Func<UserManager<NhIdentityUser>> userManagerFactory)
         {
             if (publicClientId == null)
             {
@@ -35,9 +35,9 @@ namespace MyStore.Web.Providers
         {
             try
             {
-                using (UserManager<User> userManager = _userManagerFactory())
+                using (UserManager<NhIdentityUser> userManager = _userManagerFactory())
                 {
-                    User user = await userManager.FindAsync(context.UserName, context.Password);
+                    NhIdentityUser user = await userManager.FindAsync(context.UserName, context.Password);
 
                     if (user == null)
                     {

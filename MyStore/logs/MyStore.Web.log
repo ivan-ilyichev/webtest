@@ -1,164 +1,230 @@
-2013-11-19 09:32:59,025 [6] ?.lambda_method(:0) - NHibernate 3.3.1.4000 (3.3.1.4000)
+2013-11-19 14:35:32,726 [6] ?.lambda_method(:0) - NHibernate 3.3.1.4000 (3.3.1.4000)
 
-2013-11-19 09:32:59,038 [6] ?.lambda_method(:0) - hibernate-configuration section not found in application configuration file
+2013-11-19 14:35:32,739 [6] ?.lambda_method(:0) - hibernate-configuration section not found in application configuration file
 
-2013-11-19 09:32:59,039 [6] ?.lambda_method(:0) - Bytecode provider name : lcg
+2013-11-19 14:35:32,740 [6] ?.lambda_method(:0) - Bytecode provider name : lcg
 
-2013-11-19 09:32:59,040 [6] ?.lambda_method(:0) - Using reflection optimizer
+2013-11-19 14:35:32,740 [6] ?.lambda_method(:0) - Using reflection optimizer
 
-2013-11-19 09:32:59,055 [6] ?.lambda_method(:0) - No mapped documents found in assembly: MyStore.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2013-11-19 14:35:32,756 [6] ?.lambda_method(:0) - No mapped documents found in assembly: MyStore.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 
-2013-11-19 09:32:59,219 [6] ?.lambda_method(:0) - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2013-11-19 14:35:32,937 [6] ?.lambda_method(:0) - Using dialect: NHibernate.Dialect.MsSql2008Dialect
 
-2013-11-19 09:32:59,250 [6] ?.lambda_method(:0) - Mapping class: MyStore.Domain.User -> AspNetUsers
+2013-11-19 14:35:32,969 [6] ?.lambda_method(:0) - Mapping class: MyStore.Domain.User -> AspNetUsers
 
-2013-11-19 09:32:59,284 [6] ?.lambda_method(:0) - Mapping collection: MyStore.Domain.User.Roles -> AspNetUserRoles
+2013-11-19 14:35:33,003 [6] ?.lambda_method(:0) - Mapping collection: MyStore.Domain.User.Roles -> AspNetUserRoles
 
-2013-11-19 09:32:59,286 [6] ?.lambda_method(:0) - Mapping class: MyStore.Domain.Security.Role -> AspNetRoles
+2013-11-19 14:35:33,006 [6] ?.lambda_method(:0) - Mapping class: MyStore.Domain.Security.Role -> AspNetRoles
 
-2013-11-19 09:32:59,287 [6] ?.lambda_method(:0) - Mapping class: MyStore.Domain.Security.Login -> AspNetUserLogins
+2013-11-19 14:35:33,007 [6] ?.lambda_method(:0) - Mapping class: MyStore.Domain.Security.Login -> AspNetUserLogins
 
-2013-11-19 09:32:59,300 [6] ?.lambda_method(:0) - Mapping class: MyStore.Domain.Security.UserClaim -> AspNetUserClaims
+2013-11-19 14:35:33,021 [6] ?.lambda_method(:0) - Mapping class: MyStore.Domain.Security.UserClaim -> AspNetUserClaims
 
-2013-11-19 09:32:59,333 [6] ?.lambda_method(:0) - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2013-11-19 14:35:33,028 [6] ?.lambda_method(:0) - checking mappings queue
 
-2013-11-19 09:32:59,334 [6] ?.lambda_method(:0) - Mapping class: MyStore.Domain.Customer -> Customers
+2013-11-19 14:35:33,028 [6] ?.lambda_method(:0) - processing one-to-many association mappings
 
-2013-11-19 09:32:59,338 [6] ?.lambda_method(:0) - Mapping class: MyStore.Domain.Order -> Orders
+2013-11-19 14:35:33,030 [6] ?.lambda_method(:0) - mapping collection: MyStore.Domain.User.Logins -> AspNetUserLogins
 
-2013-11-19 09:32:59,339 [6] ?.lambda_method(:0) - Mapping class: MyStore.Domain.OrderLineItem -> OrderLineItems
+2013-11-19 14:35:33,036 [6] ?.lambda_method(:0) - mapping collection: MyStore.Domain.User.Claims -> AspNetUserClaims
 
-2013-11-19 09:32:59,339 [6] ?.lambda_method(:0) - Mapping class: MyStore.Domain.ProductMgmt.Product -> Products
+2013-11-19 14:35:33,037 [6] ?.lambda_method(:0) - processing one-to-one association property references
 
-2013-11-19 09:32:59,339 [6] ?.lambda_method(:0) - Mapping collection: MyStore.Domain.ProductMgmt.Product.Categories -> Products_ProductCategories
+2013-11-19 14:35:33,037 [6] ?.lambda_method(:0) - processing foreign key constraints
 
-2013-11-19 09:32:59,340 [6] ?.lambda_method(:0) - Mapping class: MyStore.Domain.ProductMgmt.ProductCategory -> ProductCategories
+2013-11-19 14:35:33,039 [6] ?.lambda_method(:0) - processing filters (second pass)
 
-2013-11-19 09:32:59,340 [6] ?.lambda_method(:0) - Mapping collection: MyStore.Domain.ProductMgmt.ProductCategory.Products -> Products_ProductCategories
+2013-11-19 14:35:33,088 [6] ?.lambda_method(:0) - checking mappings queue
 
-2013-11-19 09:32:59,343 [6] ?.lambda_method(:0) - checking mappings queue
+2013-11-19 14:35:33,088 [6] ?.lambda_method(:0) - processing one-to-many association mappings
 
-2013-11-19 09:32:59,344 [6] ?.lambda_method(:0) - processing one-to-many association mappings
+2013-11-19 14:35:33,088 [6] ?.lambda_method(:0) - processing one-to-one association property references
 
-2013-11-19 09:32:59,346 [6] ?.lambda_method(:0) - mapping collection: MyStore.Domain.User.Logins -> AspNetUserLogins
+2013-11-19 14:35:33,089 [6] ?.lambda_method(:0) - processing foreign key constraints
 
-2013-11-19 09:32:59,352 [6] ?.lambda_method(:0) - mapping collection: MyStore.Domain.User.Claims -> AspNetUserClaims
+2013-11-19 14:35:33,089 [6] ?.lambda_method(:0) - processing filters (second pass)
 
-2013-11-19 09:32:59,352 [6] ?.lambda_method(:0) - mapping collection: MyStore.Domain.Customer.Orders -> Orders
+2013-11-19 14:35:33,115 [6] ?.lambda_method(:0) - checking mappings queue
 
-2013-11-19 09:32:59,352 [6] ?.lambda_method(:0) - mapping collection: MyStore.Domain.Order.OrderLineItems -> OrderLineItems
+2013-11-19 14:35:33,116 [6] ?.lambda_method(:0) - processing one-to-many association mappings
 
-2013-11-19 09:32:59,353 [6] ?.lambda_method(:0) - mapping collection: MyStore.Domain.ProductMgmt.ProductCategory.Children -> ProductCategories
+2013-11-19 14:35:33,116 [6] ?.lambda_method(:0) - processing one-to-one association property references
 
-2013-11-19 09:32:59,353 [6] ?.lambda_method(:0) - processing one-to-one association property references
+2013-11-19 14:35:33,116 [6] ?.lambda_method(:0) - processing foreign key constraints
 
-2013-11-19 09:32:59,353 [6] ?.lambda_method(:0) - processing foreign key constraints
+2013-11-19 14:35:33,116 [6] ?.lambda_method(:0) - processing filters (second pass)
 
-2013-11-19 09:32:59,356 [6] ?.lambda_method(:0) - processing filters (second pass)
+2013-11-19 14:35:33,117 [6] ?.lambda_method(:0) - Using dialect: NHibernate.Dialect.MsSql2008Dialect
 
-2013-11-19 09:32:59,407 [6] ?.lambda_method(:0) - checking mappings queue
+2013-11-19 14:35:33,120 [6] ?.lambda_method(:0) - Using dialect: NHibernate.Dialect.MsSql2008Dialect
 
-2013-11-19 09:32:59,407 [6] ?.lambda_method(:0) - processing one-to-many association mappings
+2013-11-19 14:35:33,143 [6] ?.lambda_method(:0) - Using dialect defined converter
 
-2013-11-19 09:32:59,407 [6] ?.lambda_method(:0) - processing one-to-one association property references
+2013-11-19 14:35:33,144 [6] ?.lambda_method(:0) - Generate SQL with comments: disabled
 
-2013-11-19 09:32:59,408 [6] ?.lambda_method(:0) - processing foreign key constraints
+2013-11-19 14:35:33,145 [6] ?.lambda_method(:0) - Configuring ConnectionProvider
 
-2013-11-19 09:32:59,408 [6] ?.lambda_method(:0) - processing filters (second pass)
+2013-11-19 14:35:33,147 [6] ?.lambda_method(:0) - Transaction factory: NHibernate.Transaction.AdoNetWithDistributedTransactionFactory
 
-2013-11-19 09:32:59,438 [6] ?.lambda_method(:0) - checking mappings queue
+2013-11-19 14:35:33,147 [6] ?.lambda_method(:0) - Optimize cache for minimal puts: False
 
-2013-11-19 09:32:59,438 [6] ?.lambda_method(:0) - processing one-to-many association mappings
+2013-11-19 14:35:33,147 [6] ?.lambda_method(:0) - Connection release mode: auto
 
-2013-11-19 09:32:59,438 [6] ?.lambda_method(:0) - processing one-to-one association property references
+2013-11-19 14:35:33,147 [6] ?.lambda_method(:0) - Default batch fetch size: 1
 
-2013-11-19 09:32:59,438 [6] ?.lambda_method(:0) - processing foreign key constraints
+2013-11-19 14:35:33,148 [6] ?.lambda_method(:0) - Statistics: disabled
 
-2013-11-19 09:32:59,439 [6] ?.lambda_method(:0) - processing filters (second pass)
+2013-11-19 14:35:33,148 [6] ?.lambda_method(:0) - Deleted entity synthetic identifier rollback: disabled
 
-2013-11-19 09:32:59,440 [6] ?.lambda_method(:0) - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2013-11-19 14:35:33,148 [6] ?.lambda_method(:0) - Query translator: NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory
 
-2013-11-19 09:32:59,442 [6] ?.lambda_method(:0) - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2013-11-19 14:35:33,150 [6] ?.lambda_method(:0) - Query language substitutions: {'true'='1', 'false'='0', 'yes'=''Y'', 'no'=''N''}
 
-2013-11-19 09:32:59,465 [6] ?.lambda_method(:0) - Using dialect defined converter
+2013-11-19 14:35:33,151 [6] ?.lambda_method(:0) - cache provider: NHibernate.Cache.NoCacheProvider, NHibernate, Version=3.3.1.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
 
-2013-11-19 09:32:59,465 [6] ?.lambda_method(:0) - Generate SQL with comments: disabled
+2013-11-19 14:35:33,152 [6] ?.lambda_method(:0) - Order SQL inserts for batching: enabled
 
-2013-11-19 09:32:59,467 [6] ?.lambda_method(:0) - Configuring ConnectionProvider
+2013-11-19 14:35:33,153 [6] ?.lambda_method(:0) - Batcher factory: NHibernate.AdoNet.SqlClientBatchingBatcherFactory, NHibernate, Version=3.3.1.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
 
-2013-11-19 09:32:59,468 [6] ?.lambda_method(:0) - Transaction factory: NHibernate.Transaction.AdoNetWithDistributedTransactionFactory
+2013-11-19 14:35:33,153 [6] ?.lambda_method(:0) - Default entity-mode: Poco
 
-2013-11-19 09:32:59,469 [6] ?.lambda_method(:0) - Optimize cache for minimal puts: False
+2013-11-19 14:35:33,154 [6] ?.lambda_method(:0) - Named query checking : enabled
 
-2013-11-19 09:32:59,469 [6] ?.lambda_method(:0) - Connection release mode: auto
+2013-11-19 14:35:33,166 [6] ?.lambda_method(:0) - building session factory
 
-2013-11-19 09:32:59,469 [6] ?.lambda_method(:0) - Default batch fetch size: 1
+2013-11-19 14:35:33,364 [6] ?.lambda_method(:0) - no name configured
 
-2013-11-19 09:32:59,470 [6] ?.lambda_method(:0) - Statistics: disabled
+2013-11-19 14:37:29,299 [6] ?.lambda_method(:0) - handling property dereference [MyStore.Domain.User (u) -> UserName (Class)]
 
-2013-11-19 09:32:59,470 [6] ?.lambda_method(:0) - Deleted entity synthetic identifier rollback: disabled
+2013-11-19 14:37:29,403 [6] ?.lambda_method(:0) - select TOP (1)  user0_.Id as Id0_, user0_.UserName as UserName0_, user0_.PasswordHash as Password3_0_, user0_.SecurityStamp as Security4_0_, user0_.Discriminator as Discrimi5_0_, user0_.ApplicationId as Applicat6_0_, user0_.LoweredUserName as LoweredU7_0_, user0_.IsAnonymous as IsAnonym8_0_, user0_.LastActivityDate as LastActi9_0_, user0_.IsApproved as IsApproved0_, user0_.IsLockedOut as IsLocke11_0_, user0_.CreateDate as CreateDate0_, user0_.LastLoginDate as LastLog13_0_, user0_.LastPasswordChangedDate as LastPas14_0_, user0_.LastLockoutDate as LastLoc15_0_, user0_.FailedPasswordAttemptCount as FailedP16_0_, user0_.FailedPasswordAttemptWindowStart as FailedP17_0_, user0_.FailedPasswordAnswerAttemptCount as FailedP18_0_, user0_.FailedPasswordAnswerAttemptWindowStart as FailedP19_0_ from AspNetUsers user0_ where user0_.UserName=@p0
 
-2013-11-19 09:32:59,470 [6] ?.lambda_method(:0) - Query translator: NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory
+2013-11-19 14:37:29,407 [6] ?.lambda_method(:0) - select TOP (1)  user0_.Id as Id0_, user0_.UserName as UserName0_, user0_.PasswordHash as Password3_0_, user0_.SecurityStamp as Security4_0_, user0_.Discriminator as Discrimi5_0_, user0_.ApplicationId as Applicat6_0_, user0_.LoweredUserName as LoweredU7_0_, user0_.IsAnonymous as IsAnonym8_0_, user0_.LastActivityDate as LastActi9_0_, user0_.IsApproved as IsApproved0_, user0_.IsLockedOut as IsLocke11_0_, user0_.CreateDate as CreateDate0_, user0_.LastLoginDate as LastLog13_0_, user0_.LastPasswordChangedDate as LastPas14_0_, user0_.LastLockoutDate as LastLoc15_0_, user0_.FailedPasswordAttemptCount as FailedP16_0_, user0_.FailedPasswordAttemptWindowStart as FailedP17_0_, user0_.FailedPasswordAnswerAttemptCount as FailedP18_0_, user0_.FailedPasswordAnswerAttemptWindowStart as FailedP19_0_ from AspNetUsers user0_ where user0_.UserName=@p0;@p0 = 'qwe' [Type: String (4000)]
 
-2013-11-19 09:32:59,472 [6] ?.lambda_method(:0) - Query language substitutions: {'true'='1', 'false'='0', 'yes'=''Y'', 'no'=''N''}
+2013-11-19 14:37:39,726 [8] ?.lambda_method(:0) - handling property dereference [MyStore.Domain.User (u) -> UserName (Class)]
 
-2013-11-19 09:32:59,473 [6] ?.lambda_method(:0) - cache provider: NHibernate.Cache.NoCacheProvider, NHibernate, Version=3.3.1.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2013-11-19 14:37:39,727 [8] ?.lambda_method(:0) - select TOP (1)  user0_.Id as Id0_, user0_.UserName as UserName0_, user0_.PasswordHash as Password3_0_, user0_.SecurityStamp as Security4_0_, user0_.Discriminator as Discrimi5_0_, user0_.ApplicationId as Applicat6_0_, user0_.LoweredUserName as LoweredU7_0_, user0_.IsAnonymous as IsAnonym8_0_, user0_.LastActivityDate as LastActi9_0_, user0_.IsApproved as IsApproved0_, user0_.IsLockedOut as IsLocke11_0_, user0_.CreateDate as CreateDate0_, user0_.LastLoginDate as LastLog13_0_, user0_.LastPasswordChangedDate as LastPas14_0_, user0_.LastLockoutDate as LastLoc15_0_, user0_.FailedPasswordAttemptCount as FailedP16_0_, user0_.FailedPasswordAttemptWindowStart as FailedP17_0_, user0_.FailedPasswordAnswerAttemptCount as FailedP18_0_, user0_.FailedPasswordAnswerAttemptWindowStart as FailedP19_0_ from AspNetUsers user0_ where user0_.UserName=@p0
 
-2013-11-19 09:32:59,474 [6] ?.lambda_method(:0) - Order SQL inserts for batching: enabled
+2013-11-19 14:37:39,727 [8] ?.lambda_method(:0) - select TOP (1)  user0_.Id as Id0_, user0_.UserName as UserName0_, user0_.PasswordHash as Password3_0_, user0_.SecurityStamp as Security4_0_, user0_.Discriminator as Discrimi5_0_, user0_.ApplicationId as Applicat6_0_, user0_.LoweredUserName as LoweredU7_0_, user0_.IsAnonymous as IsAnonym8_0_, user0_.LastActivityDate as LastActi9_0_, user0_.IsApproved as IsApproved0_, user0_.IsLockedOut as IsLocke11_0_, user0_.CreateDate as CreateDate0_, user0_.LastLoginDate as LastLog13_0_, user0_.LastPasswordChangedDate as LastPas14_0_, user0_.LastLockoutDate as LastLoc15_0_, user0_.FailedPasswordAttemptCount as FailedP16_0_, user0_.FailedPasswordAttemptWindowStart as FailedP17_0_, user0_.FailedPasswordAnswerAttemptCount as FailedP18_0_, user0_.FailedPasswordAnswerAttemptWindowStart as FailedP19_0_ from AspNetUsers user0_ where user0_.UserName=@p0;@p0 = 'test' [Type: String (4000)]
 
-2013-11-19 09:32:59,474 [6] ?.lambda_method(:0) - Batcher factory: NHibernate.AdoNet.SqlClientBatchingBatcherFactory, NHibernate, Version=3.3.1.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2013-11-19 14:37:39,754 [8] ?.lambda_method(:0) - processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: MyStore.Domain.User
 
-2013-11-19 09:32:59,475 [6] ?.lambda_method(:0) - Default entity-mode: Poco
+2013-11-19 14:37:39,757 [8] ?.lambda_method(:0) - done processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: MyStore.Domain.User
 
-2013-11-19 09:32:59,475 [6] ?.lambda_method(:0) - Named query checking : enabled
+2013-11-19 14:37:39,766 [8] ?.lambda_method(:0) - processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: MyStore.Domain.User
 
-2013-11-19 09:32:59,486 [6] ?.lambda_method(:0) - building session factory
+2013-11-19 14:37:39,768 [8] ?.lambda_method(:0) - cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: MyStore.Domain.User.Logins
 
-2013-11-19 09:32:59,698 [6] ?.lambda_method(:0) - no name configured
+2013-11-19 14:37:39,769 [8] ?.lambda_method(:0) - done cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: MyStore.Domain.User.Logins
 
-2013-11-19 09:33:19,562 [6] ?.lambda_method(:0) - handling property dereference [MyStore.Domain.User (u) -> UserName (Class)]
+2013-11-19 14:37:39,769 [8] ?.lambda_method(:0) - deleting orphans for collection: MyStore.Domain.User.Logins
 
-2013-11-19 09:33:19,668 [6] ?.lambda_method(:0) - select TOP (1)  user0_.Id as Id0_, user0_.UserName as UserName0_, user0_.PasswordHash as Password3_0_, user0_.SecurityStamp as Security4_0_ from AspNetUsers user0_ where user0_.UserName=@p0
+2013-11-19 14:37:39,771 [8] ?.lambda_method(:0) - done deleting orphans for collection: MyStore.Domain.User.Logins
 
-2013-11-19 09:33:19,673 [6] ?.lambda_method(:0) - select TOP (1)  user0_.Id as Id0_, user0_.UserName as UserName0_, user0_.PasswordHash as Password3_0_, user0_.SecurityStamp as Security4_0_ from AspNetUsers user0_ where user0_.UserName=@p0;@p0 = 'qwe' [Type: String (4000)]
+2013-11-19 14:37:39,771 [8] ?.lambda_method(:0) - cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: MyStore.Domain.User.Roles
 
-2013-11-19 09:33:25,484 [6] ?.lambda_method(:0) - Unable to determine if MyStore.Domain.User with assigned identifier 24eadb86-9101-4b56-8bd7-e4ffdbff37f6 is transient or detached; querying the database. Use explicit Save() or Update() in session to prevent this.
+2013-11-19 14:37:39,772 [8] ?.lambda_method(:0) - done cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: MyStore.Domain.User.Roles
 
-2013-11-19 09:33:25,488 [6] ?.lambda_method(:0) - SELECT user_.Id, user_.UserName as UserName0_, user_.PasswordHash as Password3_0_, user_.SecurityStamp as Security4_0_ FROM AspNetUsers user_ WHERE user_.Id=@p0;@p0 = '24eadb86-9101-4b56-8bd7-e4ffdbff37f6' [Type: String (4000)]
+2013-11-19 14:37:39,772 [8] ?.lambda_method(:0) - deleting orphans for collection: MyStore.Domain.User.Roles
 
-2013-11-19 09:33:25,495 [6] ?.lambda_method(:0) - processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: MyStore.Domain.User
+2013-11-19 14:37:39,772 [8] ?.lambda_method(:0) - done deleting orphans for collection: MyStore.Domain.User.Roles
 
-2013-11-19 09:33:25,497 [6] ?.lambda_method(:0) - done processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: MyStore.Domain.User
+2013-11-19 14:37:39,772 [8] ?.lambda_method(:0) - cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: MyStore.Domain.User.Claims
 
-2013-11-19 09:33:25,509 [6] ?.lambda_method(:0) - processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: MyStore.Domain.User
+2013-11-19 14:37:39,773 [8] ?.lambda_method(:0) - done cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: MyStore.Domain.User.Claims
 
-2013-11-19 09:33:25,511 [6] ?.lambda_method(:0) - cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: MyStore.Domain.User.Logins
+2013-11-19 14:37:39,773 [8] ?.lambda_method(:0) - deleting orphans for collection: MyStore.Domain.User.Claims
 
-2013-11-19 09:33:25,512 [6] ?.lambda_method(:0) - done cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: MyStore.Domain.User.Logins
+2013-11-19 14:37:39,773 [8] ?.lambda_method(:0) - done deleting orphans for collection: MyStore.Domain.User.Claims
 
-2013-11-19 09:33:25,512 [6] ?.lambda_method(:0) - deleting orphans for collection: MyStore.Domain.User.Logins
+2013-11-19 14:37:39,773 [8] ?.lambda_method(:0) - done processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: MyStore.Domain.User
 
-2013-11-19 09:33:25,514 [6] ?.lambda_method(:0) - done deleting orphans for collection: MyStore.Domain.User.Logins
+2013-11-19 14:37:39,776 [8] ?.lambda_method(:0) - processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: MyStore.Domain.User
 
-2013-11-19 09:33:25,514 [6] ?.lambda_method(:0) - cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: MyStore.Domain.User.Roles
+2013-11-19 14:37:39,777 [8] ?.lambda_method(:0) - cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: MyStore.Domain.User.Logins
 
-2013-11-19 09:33:25,515 [6] ?.lambda_method(:0) - done cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: MyStore.Domain.User.Roles
+2013-11-19 14:37:39,777 [8] ?.lambda_method(:0) - done cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: MyStore.Domain.User.Logins
 
-2013-11-19 09:33:25,515 [6] ?.lambda_method(:0) - deleting orphans for collection: MyStore.Domain.User.Roles
+2013-11-19 14:37:39,777 [8] ?.lambda_method(:0) - deleting orphans for collection: MyStore.Domain.User.Logins
 
-2013-11-19 09:33:25,515 [6] ?.lambda_method(:0) - done deleting orphans for collection: MyStore.Domain.User.Roles
+2013-11-19 14:37:39,777 [8] ?.lambda_method(:0) - done deleting orphans for collection: MyStore.Domain.User.Logins
 
-2013-11-19 09:33:25,515 [6] ?.lambda_method(:0) - cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: MyStore.Domain.User.Claims
+2013-11-19 14:37:39,778 [8] ?.lambda_method(:0) - cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: MyStore.Domain.User.Roles
 
-2013-11-19 09:33:25,516 [6] ?.lambda_method(:0) - done cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: MyStore.Domain.User.Claims
+2013-11-19 14:37:39,778 [8] ?.lambda_method(:0) - done cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: MyStore.Domain.User.Roles
 
-2013-11-19 09:33:25,516 [6] ?.lambda_method(:0) - deleting orphans for collection: MyStore.Domain.User.Claims
+2013-11-19 14:37:39,778 [8] ?.lambda_method(:0) - deleting orphans for collection: MyStore.Domain.User.Roles
 
-2013-11-19 09:33:25,516 [6] ?.lambda_method(:0) - done deleting orphans for collection: MyStore.Domain.User.Claims
+2013-11-19 14:37:39,778 [8] ?.lambda_method(:0) - done deleting orphans for collection: MyStore.Domain.User.Roles
 
-2013-11-19 09:33:25,516 [6] ?.lambda_method(:0) - done processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: MyStore.Domain.User
+2013-11-19 14:37:39,778 [8] ?.lambda_method(:0) - cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: MyStore.Domain.User.Claims
 
-2013-11-19 09:33:46,446 [7] ?.lambda_method(:0) - select TOP (1)  user0_.Id as Id0_, user0_.UserName as UserName0_, user0_.PasswordHash as Password3_0_, user0_.SecurityStamp as Security4_0_ from AspNetUsers user0_ where user0_.UserName=@p0
+2013-11-19 14:37:39,779 [8] ?.lambda_method(:0) - done cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: MyStore.Domain.User.Claims
 
-2013-11-19 09:33:46,446 [7] ?.lambda_method(:0) - select TOP (1)  user0_.Id as Id0_, user0_.UserName as UserName0_, user0_.PasswordHash as Password3_0_, user0_.SecurityStamp as Security4_0_ from AspNetUsers user0_ where user0_.UserName=@p0;@p0 = 'qwe' [Type: String (4000)]
+2013-11-19 14:37:39,779 [8] ?.lambda_method(:0) - deleting orphans for collection: MyStore.Domain.User.Claims
+
+2013-11-19 14:37:39,779 [8] ?.lambda_method(:0) - done deleting orphans for collection: MyStore.Domain.User.Claims
+
+2013-11-19 14:37:39,779 [8] ?.lambda_method(:0) - done processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: MyStore.Domain.User
+
+2013-11-19 14:37:39,802 [8] ?.lambda_method(:0) - Batch commands:
+command 0:INSERT INTO AspNetUsers (UserName, PasswordHash, SecurityStamp, Discriminator, ApplicationId, LoweredUserName, IsAnonymous, LastActivityDate, IsApproved, IsLockedOut, CreateDate, LastLoginDate, LastPasswordChangedDate, LastLockoutDate, FailedPasswordAttemptCount, FailedPasswordAttemptWindowStart, FailedPasswordAnswerAttemptCount, FailedPasswordAnswerAttemptWindowStart, Id) VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18);@p0 = 'test' [Type: String (4000)], @p1 = 'ANZFQej7iCP0O/o+94Rh0tQ18ekkInYq+ClL+Ql1RxXo8WhDsLLs2iLXtHC7lKzWyA==' [Type: String (4000)], @p2 = 'bfc8c969-e662-4689-b17d-ea5c4529781c' [Type: String (4000)], @p3 = '' [Type: String (4000)], @p4 = 00000000-0000-0000-0000-000000000000 [Type: Guid (0)], @p5 = 'test' [Type: String (4000)], @p6 = False [Type: Boolean (0)], @p7 = 19.11.2013 14:37:39 [Type: DateTime (0)], @p8 = True [Type: Boolean (0)], @p9 = False [Type: Boolean (0)], @p10 = 19.11.2013 14:37:39 [Type: DateTime (0)], @p11 = 19.11.2013 14:37:39 [Type: DateTime (0)], @p12 = 19.11.2013 14:37:39 [Type: DateTime (0)], @p13 = 19.11.2013 14:37:39 [Type: DateTime (0)], @p14 = 5 [Type: Int32 (0)], @p15 = 19.11.2013 14:37:39 [Type: DateTime (0)], @p16 = 5 [Type: Int32 (0)], @p17 = 19.11.2013 14:37:39 [Type: DateTime (0)], @p18 = '52240814-53ff-4d65-8f46-5e8d6724c253' [Type: String (4000)]
+
+
+2013-11-19 14:37:39,833 [10] ?.lambda_method(:0) - select TOP (1)  user0_.Id as Id0_, user0_.UserName as UserName0_, user0_.PasswordHash as Password3_0_, user0_.SecurityStamp as Security4_0_, user0_.Discriminator as Discrimi5_0_, user0_.ApplicationId as Applicat6_0_, user0_.LoweredUserName as LoweredU7_0_, user0_.IsAnonymous as IsAnonym8_0_, user0_.LastActivityDate as LastActi9_0_, user0_.IsApproved as IsApproved0_, user0_.IsLockedOut as IsLocke11_0_, user0_.CreateDate as CreateDate0_, user0_.LastLoginDate as LastLog13_0_, user0_.LastPasswordChangedDate as LastPas14_0_, user0_.LastLockoutDate as LastLoc15_0_, user0_.FailedPasswordAttemptCount as FailedP16_0_, user0_.FailedPasswordAttemptWindowStart as FailedP17_0_, user0_.FailedPasswordAnswerAttemptCount as FailedP18_0_, user0_.FailedPasswordAnswerAttemptWindowStart as FailedP19_0_ from AspNetUsers user0_ where user0_.UserName=@p0
+
+2013-11-19 14:37:39,833 [10] ?.lambda_method(:0) - select TOP (1)  user0_.Id as Id0_, user0_.UserName as UserName0_, user0_.PasswordHash as Password3_0_, user0_.SecurityStamp as Security4_0_, user0_.Discriminator as Discrimi5_0_, user0_.ApplicationId as Applicat6_0_, user0_.LoweredUserName as LoweredU7_0_, user0_.IsAnonymous as IsAnonym8_0_, user0_.LastActivityDate as LastActi9_0_, user0_.IsApproved as IsApproved0_, user0_.IsLockedOut as IsLocke11_0_, user0_.CreateDate as CreateDate0_, user0_.LastLoginDate as LastLog13_0_, user0_.LastPasswordChangedDate as LastPas14_0_, user0_.LastLockoutDate as LastLoc15_0_, user0_.FailedPasswordAttemptCount as FailedP16_0_, user0_.FailedPasswordAttemptWindowStart as FailedP17_0_, user0_.FailedPasswordAnswerAttemptCount as FailedP18_0_, user0_.FailedPasswordAnswerAttemptWindowStart as FailedP19_0_ from AspNetUsers user0_ where user0_.UserName=@p0;@p0 = 'test' [Type: String (4000)]
+
+2013-11-19 14:37:39,860 [8] ?.lambda_method(:0) - handling property dereference [MyStore.Domain.User (u) -> Id (Class)]
+
+2013-11-19 14:37:39,861 [8] ?.lambda_method(:0) - select TOP (1)  user0_.Id as Id0_, user0_.UserName as UserName0_, user0_.PasswordHash as Password3_0_, user0_.SecurityStamp as Security4_0_, user0_.Discriminator as Discrimi5_0_, user0_.ApplicationId as Applicat6_0_, user0_.LoweredUserName as LoweredU7_0_, user0_.IsAnonymous as IsAnonym8_0_, user0_.LastActivityDate as LastActi9_0_, user0_.IsApproved as IsApproved0_, user0_.IsLockedOut as IsLocke11_0_, user0_.CreateDate as CreateDate0_, user0_.LastLoginDate as LastLog13_0_, user0_.LastPasswordChangedDate as LastPas14_0_, user0_.LastLockoutDate as LastLoc15_0_, user0_.FailedPasswordAttemptCount as FailedP16_0_, user0_.FailedPasswordAttemptWindowStart as FailedP17_0_, user0_.FailedPasswordAnswerAttemptCount as FailedP18_0_, user0_.FailedPasswordAnswerAttemptWindowStart as FailedP19_0_ from AspNetUsers user0_ where user0_.Id=@p0
+
+2013-11-19 14:37:39,862 [8] ?.lambda_method(:0) - select TOP (1)  user0_.Id as Id0_, user0_.UserName as UserName0_, user0_.PasswordHash as Password3_0_, user0_.SecurityStamp as Security4_0_, user0_.Discriminator as Discrimi5_0_, user0_.ApplicationId as Applicat6_0_, user0_.LoweredUserName as LoweredU7_0_, user0_.IsAnonymous as IsAnonym8_0_, user0_.LastActivityDate as LastActi9_0_, user0_.IsApproved as IsApproved0_, user0_.IsLockedOut as IsLocke11_0_, user0_.CreateDate as CreateDate0_, user0_.LastLoginDate as LastLog13_0_, user0_.LastPasswordChangedDate as LastPas14_0_, user0_.LastLockoutDate as LastLoc15_0_, user0_.FailedPasswordAttemptCount as FailedP16_0_, user0_.FailedPasswordAttemptWindowStart as FailedP17_0_, user0_.FailedPasswordAnswerAttemptCount as FailedP18_0_, user0_.FailedPasswordAnswerAttemptWindowStart as FailedP19_0_ from AspNetUsers user0_ where user0_.Id=@p0;@p0 = '52240814-53ff-4d65-8f46-5e8d6724c253' [Type: String (4000)]
+
+2013-11-19 14:37:39,872 [8] ?.lambda_method(:0) - SELECT roles0_.UserId as UserId1_, roles0_.RoleId as RoleId1_, role1_.Id as Id2_0_, role1_.Name as Name2_0_ FROM AspNetUserRoles roles0_ left outer join AspNetRoles role1_ on roles0_.RoleId=role1_.Id WHERE roles0_.UserId=@p0
+
+2013-11-19 14:37:39,873 [8] ?.lambda_method(:0) - SELECT roles0_.UserId as UserId1_, roles0_.RoleId as RoleId1_, role1_.Id as Id2_0_, role1_.Name as Name2_0_ FROM AspNetUserRoles roles0_ left outer join AspNetRoles role1_ on roles0_.RoleId=role1_.Id WHERE roles0_.UserId=@p0;@p0 = '52240814-53ff-4d65-8f46-5e8d6724c253' [Type: String (4000)]
+
+2013-11-19 14:37:39,887 [10] ?.lambda_method(:0) - select TOP (1)  user0_.Id as Id0_, user0_.UserName as UserName0_, user0_.PasswordHash as Password3_0_, user0_.SecurityStamp as Security4_0_, user0_.Discriminator as Discrimi5_0_, user0_.ApplicationId as Applicat6_0_, user0_.LoweredUserName as LoweredU7_0_, user0_.IsAnonymous as IsAnonym8_0_, user0_.LastActivityDate as LastActi9_0_, user0_.IsApproved as IsApproved0_, user0_.IsLockedOut as IsLocke11_0_, user0_.CreateDate as CreateDate0_, user0_.LastLoginDate as LastLog13_0_, user0_.LastPasswordChangedDate as LastPas14_0_, user0_.LastLockoutDate as LastLoc15_0_, user0_.FailedPasswordAttemptCount as FailedP16_0_, user0_.FailedPasswordAttemptWindowStart as FailedP17_0_, user0_.FailedPasswordAnswerAttemptCount as FailedP18_0_, user0_.FailedPasswordAnswerAttemptWindowStart as FailedP19_0_ from AspNetUsers user0_ where user0_.Id=@p0
+
+2013-11-19 14:37:39,887 [10] ?.lambda_method(:0) - select TOP (1)  user0_.Id as Id0_, user0_.UserName as UserName0_, user0_.PasswordHash as Password3_0_, user0_.SecurityStamp as Security4_0_, user0_.Discriminator as Discrimi5_0_, user0_.ApplicationId as Applicat6_0_, user0_.LoweredUserName as LoweredU7_0_, user0_.IsAnonymous as IsAnonym8_0_, user0_.LastActivityDate as LastActi9_0_, user0_.IsApproved as IsApproved0_, user0_.IsLockedOut as IsLocke11_0_, user0_.CreateDate as CreateDate0_, user0_.LastLoginDate as LastLog13_0_, user0_.LastPasswordChangedDate as LastPas14_0_, user0_.LastLockoutDate as LastLoc15_0_, user0_.FailedPasswordAttemptCount as FailedP16_0_, user0_.FailedPasswordAttemptWindowStart as FailedP17_0_, user0_.FailedPasswordAnswerAttemptCount as FailedP18_0_, user0_.FailedPasswordAnswerAttemptWindowStart as FailedP19_0_ from AspNetUsers user0_ where user0_.Id=@p0;@p0 = '52240814-53ff-4d65-8f46-5e8d6724c253' [Type: String (4000)]
+
+2013-11-19 14:37:39,890 [10] ?.lambda_method(:0) - SELECT claims0_.User_Id as User4_1_, claims0_.Id as Id1_, claims0_.Id as Id4_0_, claims0_.ClaimType as ClaimType4_0_, claims0_.ClaimValue as ClaimValue4_0_, claims0_.User_Id as User4_4_0_ FROM AspNetUserClaims claims0_ WHERE claims0_.User_Id=@p0
+
+2013-11-19 14:37:39,890 [10] ?.lambda_method(:0) - SELECT claims0_.User_Id as User4_1_, claims0_.Id as Id1_, claims0_.Id as Id4_0_, claims0_.ClaimType as ClaimType4_0_, claims0_.ClaimValue as ClaimValue4_0_, claims0_.User_Id as User4_4_0_ FROM AspNetUserClaims claims0_ WHERE claims0_.User_Id=@p0;@p0 = '52240814-53ff-4d65-8f46-5e8d6724c253' [Type: String (4000)]
+
+2013-11-19 14:37:39,893 [7] ?.lambda_method(:0) - select TOP (1)  user0_.Id as Id0_, user0_.UserName as UserName0_, user0_.PasswordHash as Password3_0_, user0_.SecurityStamp as Security4_0_, user0_.Discriminator as Discrimi5_0_, user0_.ApplicationId as Applicat6_0_, user0_.LoweredUserName as LoweredU7_0_, user0_.IsAnonymous as IsAnonym8_0_, user0_.LastActivityDate as LastActi9_0_, user0_.IsApproved as IsApproved0_, user0_.IsLockedOut as IsLocke11_0_, user0_.CreateDate as CreateDate0_, user0_.LastLoginDate as LastLog13_0_, user0_.LastPasswordChangedDate as LastPas14_0_, user0_.LastLockoutDate as LastLoc15_0_, user0_.FailedPasswordAttemptCount as FailedP16_0_, user0_.FailedPasswordAttemptWindowStart as FailedP17_0_, user0_.FailedPasswordAnswerAttemptCount as FailedP18_0_, user0_.FailedPasswordAnswerAttemptWindowStart as FailedP19_0_ from AspNetUsers user0_ where user0_.Id=@p0
+
+2013-11-19 14:37:39,893 [7] ?.lambda_method(:0) - select TOP (1)  user0_.Id as Id0_, user0_.UserName as UserName0_, user0_.PasswordHash as Password3_0_, user0_.SecurityStamp as Security4_0_, user0_.Discriminator as Discrimi5_0_, user0_.ApplicationId as Applicat6_0_, user0_.LoweredUserName as LoweredU7_0_, user0_.IsAnonymous as IsAnonym8_0_, user0_.LastActivityDate as LastActi9_0_, user0_.IsApproved as IsApproved0_, user0_.IsLockedOut as IsLocke11_0_, user0_.CreateDate as CreateDate0_, user0_.LastLoginDate as LastLog13_0_, user0_.LastPasswordChangedDate as LastPas14_0_, user0_.LastLockoutDate as LastLoc15_0_, user0_.FailedPasswordAttemptCount as FailedP16_0_, user0_.FailedPasswordAttemptWindowStart as FailedP17_0_, user0_.FailedPasswordAnswerAttemptCount as FailedP18_0_, user0_.FailedPasswordAnswerAttemptWindowStart as FailedP19_0_ from AspNetUsers user0_ where user0_.Id=@p0;@p0 = '52240814-53ff-4d65-8f46-5e8d6724c253' [Type: String (4000)]
+
+2013-11-19 14:37:39,895 [10] ?.lambda_method(:0) - select TOP (1)  user0_.Id as Id0_, user0_.UserName as UserName0_, user0_.PasswordHash as Password3_0_, user0_.SecurityStamp as Security4_0_, user0_.Discriminator as Discrimi5_0_, user0_.ApplicationId as Applicat6_0_, user0_.LoweredUserName as LoweredU7_0_, user0_.IsAnonymous as IsAnonym8_0_, user0_.LastActivityDate as LastActi9_0_, user0_.IsApproved as IsApproved0_, user0_.IsLockedOut as IsLocke11_0_, user0_.CreateDate as CreateDate0_, user0_.LastLoginDate as LastLog13_0_, user0_.LastPasswordChangedDate as LastPas14_0_, user0_.LastLockoutDate as LastLoc15_0_, user0_.FailedPasswordAttemptCount as FailedP16_0_, user0_.FailedPasswordAttemptWindowStart as FailedP17_0_, user0_.FailedPasswordAnswerAttemptCount as FailedP18_0_, user0_.FailedPasswordAnswerAttemptWindowStart as FailedP19_0_ from AspNetUsers user0_ where user0_.Id=@p0
+
+2013-11-19 14:37:39,896 [10] ?.lambda_method(:0) - select TOP (1)  user0_.Id as Id0_, user0_.UserName as UserName0_, user0_.PasswordHash as Password3_0_, user0_.SecurityStamp as Security4_0_, user0_.Discriminator as Discrimi5_0_, user0_.ApplicationId as Applicat6_0_, user0_.LoweredUserName as LoweredU7_0_, user0_.IsAnonymous as IsAnonym8_0_, user0_.LastActivityDate as LastActi9_0_, user0_.IsApproved as IsApproved0_, user0_.IsLockedOut as IsLocke11_0_, user0_.CreateDate as CreateDate0_, user0_.LastLoginDate as LastLog13_0_, user0_.LastPasswordChangedDate as LastPas14_0_, user0_.LastLockoutDate as LastLoc15_0_, user0_.FailedPasswordAttemptCount as FailedP16_0_, user0_.FailedPasswordAttemptWindowStart as FailedP17_0_, user0_.FailedPasswordAnswerAttemptCount as FailedP18_0_, user0_.FailedPasswordAnswerAttemptWindowStart as FailedP19_0_ from AspNetUsers user0_ where user0_.Id=@p0;@p0 = '52240814-53ff-4d65-8f46-5e8d6724c253' [Type: String (4000)]
+
+2013-11-19 14:37:46,364 [6] ?.lambda_method(:0) - select TOP (1)  user0_.Id as Id0_, user0_.UserName as UserName0_, user0_.PasswordHash as Password3_0_, user0_.SecurityStamp as Security4_0_, user0_.Discriminator as Discrimi5_0_, user0_.ApplicationId as Applicat6_0_, user0_.LoweredUserName as LoweredU7_0_, user0_.IsAnonymous as IsAnonym8_0_, user0_.LastActivityDate as LastActi9_0_, user0_.IsApproved as IsApproved0_, user0_.IsLockedOut as IsLocke11_0_, user0_.CreateDate as CreateDate0_, user0_.LastLoginDate as LastLog13_0_, user0_.LastPasswordChangedDate as LastPas14_0_, user0_.LastLockoutDate as LastLoc15_0_, user0_.FailedPasswordAttemptCount as FailedP16_0_, user0_.FailedPasswordAttemptWindowStart as FailedP17_0_, user0_.FailedPasswordAnswerAttemptCount as FailedP18_0_, user0_.FailedPasswordAnswerAttemptWindowStart as FailedP19_0_ from AspNetUsers user0_ where user0_.UserName=@p0
+
+2013-11-19 14:37:46,364 [6] ?.lambda_method(:0) - select TOP (1)  user0_.Id as Id0_, user0_.UserName as UserName0_, user0_.PasswordHash as Password3_0_, user0_.SecurityStamp as Security4_0_, user0_.Discriminator as Discrimi5_0_, user0_.ApplicationId as Applicat6_0_, user0_.LoweredUserName as LoweredU7_0_, user0_.IsAnonymous as IsAnonym8_0_, user0_.LastActivityDate as LastActi9_0_, user0_.IsApproved as IsApproved0_, user0_.IsLockedOut as IsLocke11_0_, user0_.CreateDate as CreateDate0_, user0_.LastLoginDate as LastLog13_0_, user0_.LastPasswordChangedDate as LastPas14_0_, user0_.LastLockoutDate as LastLoc15_0_, user0_.FailedPasswordAttemptCount as FailedP16_0_, user0_.FailedPasswordAttemptWindowStart as FailedP17_0_, user0_.FailedPasswordAnswerAttemptCount as FailedP18_0_, user0_.FailedPasswordAnswerAttemptWindowStart as FailedP19_0_ from AspNetUsers user0_ where user0_.UserName=@p0;@p0 = 'test' [Type: String (4000)]
+
+2013-11-19 14:37:46,381 [8] ?.lambda_method(:0) - select TOP (1)  user0_.Id as Id0_, user0_.UserName as UserName0_, user0_.PasswordHash as Password3_0_, user0_.SecurityStamp as Security4_0_, user0_.Discriminator as Discrimi5_0_, user0_.ApplicationId as Applicat6_0_, user0_.LoweredUserName as LoweredU7_0_, user0_.IsAnonymous as IsAnonym8_0_, user0_.LastActivityDate as LastActi9_0_, user0_.IsApproved as IsApproved0_, user0_.IsLockedOut as IsLocke11_0_, user0_.CreateDate as CreateDate0_, user0_.LastLoginDate as LastLog13_0_, user0_.LastPasswordChangedDate as LastPas14_0_, user0_.LastLockoutDate as LastLoc15_0_, user0_.FailedPasswordAttemptCount as FailedP16_0_, user0_.FailedPasswordAttemptWindowStart as FailedP17_0_, user0_.FailedPasswordAnswerAttemptCount as FailedP18_0_, user0_.FailedPasswordAnswerAttemptWindowStart as FailedP19_0_ from AspNetUsers user0_ where user0_.Id=@p0
+
+2013-11-19 14:37:46,381 [8] ?.lambda_method(:0) - select TOP (1)  user0_.Id as Id0_, user0_.UserName as UserName0_, user0_.PasswordHash as Password3_0_, user0_.SecurityStamp as Security4_0_, user0_.Discriminator as Discrimi5_0_, user0_.ApplicationId as Applicat6_0_, user0_.LoweredUserName as LoweredU7_0_, user0_.IsAnonymous as IsAnonym8_0_, user0_.LastActivityDate as LastActi9_0_, user0_.IsApproved as IsApproved0_, user0_.IsLockedOut as IsLocke11_0_, user0_.CreateDate as CreateDate0_, user0_.LastLoginDate as LastLog13_0_, user0_.LastPasswordChangedDate as LastPas14_0_, user0_.LastLockoutDate as LastLoc15_0_, user0_.FailedPasswordAttemptCount as FailedP16_0_, user0_.FailedPasswordAttemptWindowStart as FailedP17_0_, user0_.FailedPasswordAnswerAttemptCount as FailedP18_0_, user0_.FailedPasswordAnswerAttemptWindowStart as FailedP19_0_ from AspNetUsers user0_ where user0_.Id=@p0;@p0 = '52240814-53ff-4d65-8f46-5e8d6724c253' [Type: String (4000)]
+
+2013-11-19 14:37:46,384 [8] ?.lambda_method(:0) - SELECT roles0_.UserId as UserId1_, roles0_.RoleId as RoleId1_, role1_.Id as Id2_0_, role1_.Name as Name2_0_ FROM AspNetUserRoles roles0_ left outer join AspNetRoles role1_ on roles0_.RoleId=role1_.Id WHERE roles0_.UserId=@p0
+
+2013-11-19 14:37:46,384 [8] ?.lambda_method(:0) - SELECT roles0_.UserId as UserId1_, roles0_.RoleId as RoleId1_, role1_.Id as Id2_0_, role1_.Name as Name2_0_ FROM AspNetUserRoles roles0_ left outer join AspNetRoles role1_ on roles0_.RoleId=role1_.Id WHERE roles0_.UserId=@p0;@p0 = '52240814-53ff-4d65-8f46-5e8d6724c253' [Type: String (4000)]
+
+2013-11-19 14:37:46,387 [6] ?.lambda_method(:0) - select TOP (1)  user0_.Id as Id0_, user0_.UserName as UserName0_, user0_.PasswordHash as Password3_0_, user0_.SecurityStamp as Security4_0_, user0_.Discriminator as Discrimi5_0_, user0_.ApplicationId as Applicat6_0_, user0_.LoweredUserName as LoweredU7_0_, user0_.IsAnonymous as IsAnonym8_0_, user0_.LastActivityDate as LastActi9_0_, user0_.IsApproved as IsApproved0_, user0_.IsLockedOut as IsLocke11_0_, user0_.CreateDate as CreateDate0_, user0_.LastLoginDate as LastLog13_0_, user0_.LastPasswordChangedDate as LastPas14_0_, user0_.LastLockoutDate as LastLoc15_0_, user0_.FailedPasswordAttemptCount as FailedP16_0_, user0_.FailedPasswordAttemptWindowStart as FailedP17_0_, user0_.FailedPasswordAnswerAttemptCount as FailedP18_0_, user0_.FailedPasswordAnswerAttemptWindowStart as FailedP19_0_ from AspNetUsers user0_ where user0_.Id=@p0
+
+2013-11-19 14:37:46,387 [6] ?.lambda_method(:0) - select TOP (1)  user0_.Id as Id0_, user0_.UserName as UserName0_, user0_.PasswordHash as Password3_0_, user0_.SecurityStamp as Security4_0_, user0_.Discriminator as Discrimi5_0_, user0_.ApplicationId as Applicat6_0_, user0_.LoweredUserName as LoweredU7_0_, user0_.IsAnonymous as IsAnonym8_0_, user0_.LastActivityDate as LastActi9_0_, user0_.IsApproved as IsApproved0_, user0_.IsLockedOut as IsLocke11_0_, user0_.CreateDate as CreateDate0_, user0_.LastLoginDate as LastLog13_0_, user0_.LastPasswordChangedDate as LastPas14_0_, user0_.LastLockoutDate as LastLoc15_0_, user0_.FailedPasswordAttemptCount as FailedP16_0_, user0_.FailedPasswordAttemptWindowStart as FailedP17_0_, user0_.FailedPasswordAnswerAttemptCount as FailedP18_0_, user0_.FailedPasswordAnswerAttemptWindowStart as FailedP19_0_ from AspNetUsers user0_ where user0_.Id=@p0;@p0 = '52240814-53ff-4d65-8f46-5e8d6724c253' [Type: String (4000)]
+
+2013-11-19 14:37:46,389 [6] ?.lambda_method(:0) - SELECT claims0_.User_Id as User4_1_, claims0_.Id as Id1_, claims0_.Id as Id4_0_, claims0_.ClaimType as ClaimType4_0_, claims0_.ClaimValue as ClaimValue4_0_, claims0_.User_Id as User4_4_0_ FROM AspNetUserClaims claims0_ WHERE claims0_.User_Id=@p0
+
+2013-11-19 14:37:46,389 [6] ?.lambda_method(:0) - SELECT claims0_.User_Id as User4_1_, claims0_.Id as Id1_, claims0_.Id as Id4_0_, claims0_.ClaimType as ClaimType4_0_, claims0_.ClaimValue as ClaimValue4_0_, claims0_.User_Id as User4_4_0_ FROM AspNetUserClaims claims0_ WHERE claims0_.User_Id=@p0;@p0 = '52240814-53ff-4d65-8f46-5e8d6724c253' [Type: String (4000)]
+
+2013-11-19 14:37:46,391 [11] ?.lambda_method(:0) - select TOP (1)  user0_.Id as Id0_, user0_.UserName as UserName0_, user0_.PasswordHash as Password3_0_, user0_.SecurityStamp as Security4_0_, user0_.Discriminator as Discrimi5_0_, user0_.ApplicationId as Applicat6_0_, user0_.LoweredUserName as LoweredU7_0_, user0_.IsAnonymous as IsAnonym8_0_, user0_.LastActivityDate as LastActi9_0_, user0_.IsApproved as IsApproved0_, user0_.IsLockedOut as IsLocke11_0_, user0_.CreateDate as CreateDate0_, user0_.LastLoginDate as LastLog13_0_, user0_.LastPasswordChangedDate as LastPas14_0_, user0_.LastLockoutDate as LastLoc15_0_, user0_.FailedPasswordAttemptCount as FailedP16_0_, user0_.FailedPasswordAttemptWindowStart as FailedP17_0_, user0_.FailedPasswordAnswerAttemptCount as FailedP18_0_, user0_.FailedPasswordAnswerAttemptWindowStart as FailedP19_0_ from AspNetUsers user0_ where user0_.Id=@p0
+
+2013-11-19 14:37:46,391 [11] ?.lambda_method(:0) - select TOP (1)  user0_.Id as Id0_, user0_.UserName as UserName0_, user0_.PasswordHash as Password3_0_, user0_.SecurityStamp as Security4_0_, user0_.Discriminator as Discrimi5_0_, user0_.ApplicationId as Applicat6_0_, user0_.LoweredUserName as LoweredU7_0_, user0_.IsAnonymous as IsAnonym8_0_, user0_.LastActivityDate as LastActi9_0_, user0_.IsApproved as IsApproved0_, user0_.IsLockedOut as IsLocke11_0_, user0_.CreateDate as CreateDate0_, user0_.LastLoginDate as LastLog13_0_, user0_.LastPasswordChangedDate as LastPas14_0_, user0_.LastLockoutDate as LastLoc15_0_, user0_.FailedPasswordAttemptCount as FailedP16_0_, user0_.FailedPasswordAttemptWindowStart as FailedP17_0_, user0_.FailedPasswordAnswerAttemptCount as FailedP18_0_, user0_.FailedPasswordAnswerAttemptWindowStart as FailedP19_0_ from AspNetUsers user0_ where user0_.Id=@p0;@p0 = '52240814-53ff-4d65-8f46-5e8d6724c253' [Type: String (4000)]
+
+2013-11-19 14:37:46,393 [6] ?.lambda_method(:0) - select TOP (1)  user0_.Id as Id0_, user0_.UserName as UserName0_, user0_.PasswordHash as Password3_0_, user0_.SecurityStamp as Security4_0_, user0_.Discriminator as Discrimi5_0_, user0_.ApplicationId as Applicat6_0_, user0_.LoweredUserName as LoweredU7_0_, user0_.IsAnonymous as IsAnonym8_0_, user0_.LastActivityDate as LastActi9_0_, user0_.IsApproved as IsApproved0_, user0_.IsLockedOut as IsLocke11_0_, user0_.CreateDate as CreateDate0_, user0_.LastLoginDate as LastLog13_0_, user0_.LastPasswordChangedDate as LastPas14_0_, user0_.LastLockoutDate as LastLoc15_0_, user0_.FailedPasswordAttemptCount as FailedP16_0_, user0_.FailedPasswordAttemptWindowStart as FailedP17_0_, user0_.FailedPasswordAnswerAttemptCount as FailedP18_0_, user0_.FailedPasswordAnswerAttemptWindowStart as FailedP19_0_ from AspNetUsers user0_ where user0_.Id=@p0
+
+2013-11-19 14:37:46,393 [6] ?.lambda_method(:0) - select TOP (1)  user0_.Id as Id0_, user0_.UserName as UserName0_, user0_.PasswordHash as Password3_0_, user0_.SecurityStamp as Security4_0_, user0_.Discriminator as Discrimi5_0_, user0_.ApplicationId as Applicat6_0_, user0_.LoweredUserName as LoweredU7_0_, user0_.IsAnonymous as IsAnonym8_0_, user0_.LastActivityDate as LastActi9_0_, user0_.IsApproved as IsApproved0_, user0_.IsLockedOut as IsLocke11_0_, user0_.CreateDate as CreateDate0_, user0_.LastLoginDate as LastLog13_0_, user0_.LastPasswordChangedDate as LastPas14_0_, user0_.LastLockoutDate as LastLoc15_0_, user0_.FailedPasswordAttemptCount as FailedP16_0_, user0_.FailedPasswordAttemptWindowStart as FailedP17_0_, user0_.FailedPasswordAnswerAttemptCount as FailedP18_0_, user0_.FailedPasswordAnswerAttemptWindowStart as FailedP19_0_ from AspNetUsers user0_ where user0_.Id=@p0;@p0 = '52240814-53ff-4d65-8f46-5e8d6724c253' [Type: String (4000)]
 

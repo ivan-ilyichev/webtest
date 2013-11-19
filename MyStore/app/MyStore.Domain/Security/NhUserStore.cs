@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNet.Identity;
 using NHibernate;
 using NHibernate.Linq;
-using SharpLite.Domain.DataInterfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,34 +10,23 @@ using System.Web.Mvc;
 
 namespace MyStore.Domain.Security
 {
-    public class UserStore<TUser> :
+    public class NhUserStore<TUser> :
         IUserLoginStore<TUser>,
         IUserClaimStore<TUser>,
         IUserRoleStore<TUser>,    
         IUserPasswordStore<TUser>,
         IUserSecurityStampStore<TUser>,
-        IDisposable where TUser : User
+        IDisposable where TUser : NhIdentityUser
     {
         #region constructor and properties 
 
         private readonly ISession _session;
 
-        
-        private readonly IRepository<TUser> _userRepository;
-        private readonly IRepository<Role> _roleRepository;
-        private readonly IRepository<UserClaim> _claimRepository;
-        
-        //private readonly Lazy Module
-
-        public UserStore()
+        public NhUserStore()
         {
             var sessionFactory = DependencyResolver.Current.GetService<ISessionFactory>();
             _session = sessionFactory.OpenSession();
-            _session.FlushMode = FlushMode.Always;
-
-            _userRepository = DependencyResolver.Current.GetService<IRepository<TUser>>();
-            _roleRepository = DependencyResolver.Current.GetService<IRepository<Role>>();
-            _claimRepository = DependencyResolver.Current.GetService<IRepository<UserClaim>>();
+            //_session.FlushMode = FlushMode.Always;
         }
 
         public void Dispose()
@@ -60,7 +48,7 @@ namespace MyStore.Domain.Security
             {
                 throw new ArgumentNullException("claim");
             }
-            var item = new UserClaim
+            var item = new NhIdentityUserClaim
             {
                 User = user,
                 ClaimType = claim.Type,
@@ -93,7 +81,8 @@ namespace MyStore.Domain.Security
             var toRemove = user.Claims.Where(c => c.ClaimValue == claim.Value && c.ClaimType == claim.Type).ToList();
             foreach (var userClaim in toRemove)
             {
-                _claimRepository.Delete(userClaim);    
+                _session.Delete(userClaim);
+                _session.Flush();
             }
             
             return Task.FromResult(0);
@@ -113,7 +102,7 @@ namespace MyStore.Domain.Security
             {
                 throw new ArgumentNullException("login");
             }
-            var item = new Login
+            var item = new NhIdentityUserLogin
             {
                 User = user,
                 ProviderKey = login.ProviderKey,
@@ -168,7 +157,7 @@ namespace MyStore.Domain.Security
                 throw new ArgumentNullException("role");
             }
 
-            var roleEntry = _roleRepository.GetAll().FirstOrDefault(r => r.Name.ToUpper() == role.ToUpper());
+            var roleEntry = _session.Query<NhIdentityUserRole>().FirstOrDefault(r => r.Name.ToUpper() == role.ToUpper());
             if (roleEntry == null)
             {
                 throw new InvalidOperationException(string.Format("Can't find role '{0}'", role));
@@ -216,9 +205,8 @@ namespace MyStore.Domain.Security
 
             try
             {
-                var classes = _session.SessionFactory.GetAllClassMetadata();
-
                 _session.SaveOrUpdate(user);
+                _session.Flush();
             }
             catch (Exception e)
             {
@@ -230,7 +218,8 @@ namespace MyStore.Domain.Security
 
         public Task DeleteAsync(TUser user)
         {
-            _userRepository.Delete(user);
+            _session.Delete(user);
+            _session.Flush();
 
             return Task.FromResult(0);
         }
@@ -241,12 +230,18 @@ namespace MyStore.Domain.Security
             {
                 throw new ArgumentNullException("login");
             }
-            return Task.Factory.StartNew(() => _userRepository.GetAll().FirstOrDefault(u => u.Logins.Any(l => l.LoginProvider == login.LoginProvider && l.ProviderKey == login.ProviderKey)));
+            return Task.Factory.StartNew(() => 
+                _session.Query<TUser>().FirstOrDefault(u => u.Logins.Any(l => l.LoginProvider == login.LoginProvider && l.ProviderKey == login.ProviderKey))
+            );
         }
 
         public Task<TUser> FindByIdAsync(string userId)
         {
-            return Task<TUser>.Factory.StartNew(() => _userRepository.GetAll().FirstOrDefault(u => u.Id == userId));
+            return Task<TUser>.Factory.StartNew(() =>
+            {
+                var user = _session.Query<TUser>().FirstOrDefault(u => u.Id == userId);
+                return user;
+            });
         }
 
         public Task<TUser> FindByNameAsync(string userName)
@@ -303,7 +298,11 @@ namespace MyStore.Domain.Security
                 throw new ArgumentNullException("user");
             }
 
-            return Task.Run(() => _userRepository.SaveOrUpdate(user));
+            return Task.Run(() =>
+            {
+                _session.SaveOrUpdate(user);
+                _session.Flush();
+            });
         }
 
         #endregion
@@ -316,7 +315,7 @@ namespace MyStore.Domain.Security
             {
                 throw new ArgumentNullException("user");
             }
-            return Task.FromResult(user.PasswordHash);
+            return Task.FromResult<string>(user.PasswordHash);
         }
 
         public Task SetPasswordHashAsync(TUser user, string passwordHash)

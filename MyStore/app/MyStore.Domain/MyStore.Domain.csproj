@@ -97,12 +97,11 @@
     <Compile Include="Queries\CustomerOrderSummaryDto.cs" />
     <Compile Include="Queries\FindActiveCustomers.cs" />
     <Compile Include="Queries\QueryForCustomerOrderSummaries.cs" />
-    <Compile Include="Security\Login.cs" />
-    <Compile Include="Security\LoginStore.cs" />
-    <Compile Include="Security\Role.cs" />
-    <Compile Include="Security\User.cs" />
-    <Compile Include="Security\UserClaim.cs" />
-    <Compile Include="Security\UserStore.cs" />
+    <Compile Include="Security\NhIdentityUserLogin.cs" />
+    <Compile Include="Security\NhIdentityUserRole.cs" />
+    <Compile Include="Security\NhIdentityUser.cs" />
+    <Compile Include="Security\NhIdentityUserClaim.cs" />
+    <Compile Include="Security\NhUserStore.cs" />
     <Compile Include="Validators\DataAnnotationsValidator.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -30,14 +30,14 @@ namespace MyStore.Web.Controllers
         {
         }
 
-        public AccountController(UserManager<User> userManager,
+        public AccountController(UserManager<NhIdentityUser> userManager,
             ISecureDataFormat<AuthenticationTicket> accessTokenFormat)
         {
             UserManager = userManager;
             AccessTokenFormat = accessTokenFormat;
         }
 
-        public UserManager<User> UserManager { get; private set; }
+        public UserManager<NhIdentityUser> UserManager { get; private set; }
         public ISecureDataFormat<AuthenticationTicket> AccessTokenFormat { get; private set; }
 
         // GET api/Account/UserInfo
@@ -67,7 +67,7 @@ namespace MyStore.Web.Controllers
         [Route("ManageInfo")]
         public async Task<ManageInfoViewModel> GetManageInfo(string returnUrl, bool generateState = false)
         {
-            User user = await UserManager.FindByIdAsync(User.Identity.GetUserId());
+            NhIdentityUser user = await UserManager.FindByIdAsync(User.Identity.GetUserId());
 
             if (user == null)
             {
@@ -245,7 +245,7 @@ namespace MyStore.Web.Controllers
                 return new ChallengeResult(provider, this);
             }
 
-            User user = await UserManager.FindAsync(new UserLoginInfo(externalLogin.LoginProvider,
+            NhIdentityUser user = await UserManager.FindAsync(new UserLoginInfo(externalLogin.LoginProvider,
                 externalLogin.ProviderKey));
 
             bool hasRegistered = user != null;
@@ -321,9 +321,25 @@ namespace MyStore.Web.Controllers
                 return BadRequest(ModelState);
             }
 
-            User user = new User
+            var now = DateTime.Now;
+            var user = new NhIdentityUser
             {
-                UserName = model.UserName
+                UserName = model.UserName,
+                Discriminator = "",
+                ApplicationId = Guid.Empty,
+                LoweredUserName = model.UserName.ToLower(),
+                IsAnonymous = false,
+                LastActivityDate = now,
+                IsApproved = true,
+                IsLockedOut = false,
+                CreateDate = now,
+                LastLoginDate = now,
+                LastPasswordChangedDate = now,
+                LastLockoutDate = now,
+                FailedPasswordAttemptCount = 5,
+                FailedPasswordAttemptWindowStart = now,
+                FailedPasswordAnswerAttemptCount = 5,
+                FailedPasswordAnswerAttemptWindowStart = now 
             };
 
             try
@@ -362,11 +378,11 @@ namespace MyStore.Web.Controllers
                 return InternalServerError();
             }
 
-            User user = new User
+            NhIdentityUser user = new NhIdentityUser
             {
                 UserName = model.UserName
             };
-            user.Logins.Add(new Login
+            user.Logins.Add(new NhIdentityUserLogin
             {
                 LoginProvider = externalLogin.LoginProvider,
                 ProviderKey = externalLogin.ProviderKey

@@ -8,13 +8,8 @@ using SharpLite.Domain;
 
 namespace MyStore.Domain.Security
 {
-    public class Role : EntityWithTypedId<string>, IRole
+    public class NhIdentityUserRole : EntityWithTypedId<string>, IRole
     {
         public virtual string Name { get; set; }
-
-        public Role()
-        {
-            Id = Guid.NewGuid().ToString();
-        }
     }
 }

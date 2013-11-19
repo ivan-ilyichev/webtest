@@ -1,20 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MyStore.Domain;
+﻿using MyStore.Domain;
 using NHibernate.Mapping.ByCode;
 using NHibernate.Mapping.ByCode.Conformist;
+using Cascade = NHibernate.Mapping.ByCode.Cascade;
 
 namespace MyStore.NHibernateProvider.Overrides
 {
-    public class UserMapping : ClassMapping<User>
+    public class NhIdentityUserMapping : ClassMapping<NhIdentityUser>
     {
-        public UserMapping()
+        public NhIdentityUserMapping()
         {
             Table("AspNetUsers");
-            Id(u => u.Id);
+            Id(x => x.Id, m => m.Generator(new NhStringGuidGeneratorDef()));
 
             Bag(e => e.Claims, bag =>
             {
@@ -47,15 +43,6 @@ namespace MyStore.NHibernateProvider.Overrides
                     m.Column("RoleId");
                 })
             );
-            /*
-            HasManyToMany(e => e.Wards)
-                .AsBag()
-                .Table("erep_ReportWards")
-                .ParentKeyColumn("ReportId")
-                .ChildKeyColumn("WardId")
-                .LazyLoad()
-                .Cascade.All();             
-             */
         }
     }
 }

@@ -68,19 +68,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conventions.cs" />
+    <Compile Include="NhStringGuidGenerator.cs" />
     <Compile Include="Overrides\ContractTypeCustomType.cs" />
     <Compile Include="NHibernateInitializer.cs" />
     <Compile Include="Overrides\IOverride.cs" />
-    <Compile Include="Overrides\LoginMapping.cs" />
-    <Compile Include="Overrides\UserClaimMapping.cs" />
-    <Compile Include="Overrides\RoleMapping.cs" />
-    <Compile Include="Overrides\UserMapping.cs" />
+    <Compile Include="Overrides\NhNhIdentityUserLoginMapping.cs" />
+    <Compile Include="Overrides\NhIdentityUserClaimMapping.cs" />
+    <Compile Include="Overrides\NhIdentityUserRoleMapping.cs" />
+    <Compile Include="Overrides\NhIdentityUserMapping.cs" />
     <Compile Include="Overrides\UserOverride.cs" />
     <Compile Include="Overrides\OrderOverride.cs" />
     <Compile Include="Overrides\ProductCategoryOverride.cs" />
     <Compile Include="Overrides\ProductOverride.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Queries\QueryForProductOrderSummaries.cs" />
+    <Compile Include="NhStringGuidGeneratorDef.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MyStore.Domain\MyStore.Domain.csproj">

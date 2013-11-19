@@ -18,7 +18,7 @@ namespace MyStore.Web
 
             UserManagerFactory = () =>
             {
-                return new UserManager<User>(new UserStore<User>());
+                return new UserManager<NhIdentityUser>(new NhUserStore<NhIdentityUser>());
             };
 
             OAuthOptions = new OAuthAuthorizationServerOptions
@@ -35,7 +35,7 @@ namespace MyStore.Web
 
         public static OAuthAuthorizationServerOptions OAuthOptions { get; private set; }
 
-        public static Func<UserManager<User>> UserManagerFactory { get; set; }
+        public static Func<UserManager<NhIdentityUser>> UserManagerFactory { get; set; }
 
         public static string PublicClientId { get; private set; }
 
