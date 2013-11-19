@@ -321,43 +321,16 @@ namespace MyStore.Web.Controllers
                 return BadRequest(ModelState);
             }
 
-            var now = DateTime.Now;
-            var user = new NhIdentityUser
+            var user = CreateDefaultUser(model.UserName);
+            IdentityResult result = await UserManager.CreateAsync(user, model.Password);
+            IHttpActionResult errorResult = GetErrorResult(result);
+
+            if (errorResult != null)
             {
-                UserName = model.UserName,
-                Discriminator = "",
-                ApplicationId = Guid.Empty,
-                LoweredUserName = model.UserName.ToLower(),
-                IsAnonymous = false,
-                LastActivityDate = now,
-                IsApproved = true,
-                IsLockedOut = false,
-                CreateDate = now,
-                LastLoginDate = now,
-                LastPasswordChangedDate = now,
-                LastLockoutDate = now,
-                FailedPasswordAttemptCount = 5,
-                FailedPasswordAttemptWindowStart = now,
-                FailedPasswordAnswerAttemptCount = 5,
-                FailedPasswordAnswerAttemptWindowStart = now 
-            };
-
-            try
-            {
-                IdentityResult result = await UserManager.CreateAsync(user, model.Password);
-                IHttpActionResult errorResult = GetErrorResult(result);
-
-                if (errorResult != null)
-                {
-                    return errorResult;
-                }
-
-                return Ok();
+                return errorResult;
             }
-            catch (Exception e)
-            {
-                throw;
-            }
+
+            return Ok();
         }
 
         // POST api/Account/RegisterExternal
@@ -378,12 +351,10 @@ namespace MyStore.Web.Controllers
                 return InternalServerError();
             }
 
-            NhIdentityUser user = new NhIdentityUser
-            {
-                UserName = model.UserName
-            };
+            var user = CreateDefaultUser(model.UserName);
             user.Logins.Add(new NhIdentityUserLogin
             {
+                User = user,
                 LoginProvider = externalLogin.LoginProvider,
                 ProviderKey = externalLogin.ProviderKey
             });
@@ -406,6 +377,32 @@ namespace MyStore.Web.Controllers
             }
 
             base.Dispose(disposing);
+        }
+
+        private NhIdentityUser CreateDefaultUser(string userName)
+        {
+            var now = DateTime.Now;
+            var user = new NhIdentityUser
+            {
+                UserName = userName,
+                Discriminator = "",
+                ApplicationId = Guid.Empty,
+                LoweredUserName = userName.ToLower(),
+                IsAnonymous = false,
+                LastActivityDate = now,
+                IsApproved = true,
+                IsLockedOut = false,
+                CreateDate = now,
+                LastLoginDate = now,
+                LastPasswordChangedDate = now,
+                LastLockoutDate = now,
+                FailedPasswordAttemptCount = 5,
+                FailedPasswordAttemptWindowStart = now,
+                FailedPasswordAnswerAttemptCount = 5,
+                FailedPasswordAnswerAttemptWindowStart = now
+            };
+            
+            return user;
         }
 
         #region Helpers

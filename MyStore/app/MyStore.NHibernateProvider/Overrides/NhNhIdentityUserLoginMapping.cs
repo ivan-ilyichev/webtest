@@ -12,11 +12,11 @@ namespace MyStore.NHibernateProvider.Overrides
 
             ComposedId(m =>
             {
-                m.Property(x => x.UserId);
+                m.ManyToOne<NhIdentityUser>(x => x.User, a => a.Column("UserId"));
                 m.Property(x => x.LoginProvider);
                 m.Property(x => x.ProviderKey);
             });
-            ManyToOne<NhIdentityUser>(l => l.User, a => a.Column("UserId"));
+            //ManyToOne<NhIdentityUser>(l => l.User, a => a.Column("UserId"));
         }
     }
 }

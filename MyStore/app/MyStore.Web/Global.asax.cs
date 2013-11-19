@@ -38,6 +38,7 @@ namespace MyStore.Web
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             
             RegisterGlobalFilters(GlobalFilters.Filters);
+            //GlobalConfiguration.Configuration.Filters.Add(new ElmahHandleErrorApiAttribute());
             
             //RegisterRoutes(RouteTable.Routes);
 
