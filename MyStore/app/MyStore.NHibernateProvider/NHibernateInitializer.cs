@@ -40,21 +40,22 @@ namespace MyStore.NHibernateProvider
                 mapper.AddMappings(new List<Type>()
                 {
                     typeof (UserMapping),
+                    typeof (RoleMapping),
                     typeof (LoginMapping),
                     typeof (UserClaimMapping)
                 });
-
                 var mapping = mapper.CompileMappingFor(new List<Type>()
                 {
                     typeof (User),
+                    typeof (Role),
                     typeof (Login),
                     typeof (UserClaim)
                 });
                 var lastCompiledXml = mapping.AsString();
-                
-                
-                mapper.WithConventions(configuration);
+                configuration.AddDeserializedMapping(mapping, "IdentityMappings");
 
+                mapper.WithConventions(configuration);
+                
                 cache.SaveConfiguration(CONFIG_CACHE_KEY, configuration);
             }
 

@@ -1,102 +1,164 @@
-2013-11-18 17:24:21,292 [9] ?.lambda_method(:0) - NHibernate 3.3.1.4000 (3.3.1.4000)
+2013-11-19 09:32:59,025 [6] ?.lambda_method(:0) - NHibernate 3.3.1.4000 (3.3.1.4000)
 
-2013-11-18 17:24:21,305 [9] ?.lambda_method(:0) - hibernate-configuration section not found in application configuration file
+2013-11-19 09:32:59,038 [6] ?.lambda_method(:0) - hibernate-configuration section not found in application configuration file
 
-2013-11-18 17:24:21,306 [9] ?.lambda_method(:0) - Bytecode provider name : lcg
+2013-11-19 09:32:59,039 [6] ?.lambda_method(:0) - Bytecode provider name : lcg
 
-2013-11-18 17:24:21,306 [9] ?.lambda_method(:0) - Using reflection optimizer
+2013-11-19 09:32:59,040 [6] ?.lambda_method(:0) - Using reflection optimizer
 
-2013-11-18 17:24:21,322 [9] ?.lambda_method(:0) - No mapped documents found in assembly: MyStore.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+2013-11-19 09:32:59,055 [6] ?.lambda_method(:0) - No mapped documents found in assembly: MyStore.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 
-2013-11-18 17:24:21,526 [9] ?.lambda_method(:0) - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2013-11-19 09:32:59,219 [6] ?.lambda_method(:0) - Using dialect: NHibernate.Dialect.MsSql2008Dialect
 
-2013-11-18 17:24:21,558 [9] ?.lambda_method(:0) - Mapping class: MyStore.Domain.Customer -> Customers
+2013-11-19 09:32:59,250 [6] ?.lambda_method(:0) - Mapping class: MyStore.Domain.User -> AspNetUsers
 
-2013-11-18 17:24:21,598 [9] ?.lambda_method(:0) - Mapping class: MyStore.Domain.Order -> Orders
+2013-11-19 09:32:59,284 [6] ?.lambda_method(:0) - Mapping collection: MyStore.Domain.User.Roles -> AspNetUserRoles
 
-2013-11-18 17:24:21,605 [9] ?.lambda_method(:0) - Mapping class: MyStore.Domain.OrderLineItem -> OrderLineItems
+2013-11-19 09:32:59,286 [6] ?.lambda_method(:0) - Mapping class: MyStore.Domain.Security.Role -> AspNetRoles
 
-2013-11-18 17:24:21,606 [9] ?.lambda_method(:0) - Mapping class: MyStore.Domain.ProductMgmt.Product -> Products
+2013-11-19 09:32:59,287 [6] ?.lambda_method(:0) - Mapping class: MyStore.Domain.Security.Login -> AspNetUserLogins
 
-2013-11-18 17:24:21,607 [9] ?.lambda_method(:0) - Mapping collection: MyStore.Domain.ProductMgmt.Product.Categories -> Products_ProductCategories
+2013-11-19 09:32:59,300 [6] ?.lambda_method(:0) - Mapping class: MyStore.Domain.Security.UserClaim -> AspNetUserClaims
 
-2013-11-18 17:24:21,607 [9] ?.lambda_method(:0) - Mapping class: MyStore.Domain.ProductMgmt.ProductCategory -> ProductCategories
+2013-11-19 09:32:59,333 [6] ?.lambda_method(:0) - Using dialect: NHibernate.Dialect.MsSql2008Dialect
 
-2013-11-18 17:24:21,608 [9] ?.lambda_method(:0) - Mapping collection: MyStore.Domain.ProductMgmt.ProductCategory.Products -> Products_ProductCategories
+2013-11-19 09:32:59,334 [6] ?.lambda_method(:0) - Mapping class: MyStore.Domain.Customer -> Customers
 
-2013-11-18 17:24:21,615 [9] ?.lambda_method(:0) - checking mappings queue
+2013-11-19 09:32:59,338 [6] ?.lambda_method(:0) - Mapping class: MyStore.Domain.Order -> Orders
 
-2013-11-18 17:24:21,615 [9] ?.lambda_method(:0) - processing one-to-many association mappings
+2013-11-19 09:32:59,339 [6] ?.lambda_method(:0) - Mapping class: MyStore.Domain.OrderLineItem -> OrderLineItems
 
-2013-11-18 17:24:21,617 [9] ?.lambda_method(:0) - mapping collection: MyStore.Domain.Customer.Orders -> Orders
+2013-11-19 09:32:59,339 [6] ?.lambda_method(:0) - Mapping class: MyStore.Domain.ProductMgmt.Product -> Products
 
-2013-11-18 17:24:21,621 [9] ?.lambda_method(:0) - mapping collection: MyStore.Domain.Order.OrderLineItems -> OrderLineItems
+2013-11-19 09:32:59,339 [6] ?.lambda_method(:0) - Mapping collection: MyStore.Domain.ProductMgmt.Product.Categories -> Products_ProductCategories
 
-2013-11-18 17:24:21,624 [9] ?.lambda_method(:0) - mapping collection: MyStore.Domain.ProductMgmt.ProductCategory.Children -> ProductCategories
+2013-11-19 09:32:59,340 [6] ?.lambda_method(:0) - Mapping class: MyStore.Domain.ProductMgmt.ProductCategory -> ProductCategories
 
-2013-11-18 17:24:21,624 [9] ?.lambda_method(:0) - processing one-to-one association property references
+2013-11-19 09:32:59,340 [6] ?.lambda_method(:0) - Mapping collection: MyStore.Domain.ProductMgmt.ProductCategory.Products -> Products_ProductCategories
 
-2013-11-18 17:24:21,624 [9] ?.lambda_method(:0) - processing foreign key constraints
+2013-11-19 09:32:59,343 [6] ?.lambda_method(:0) - checking mappings queue
 
-2013-11-18 17:24:21,627 [9] ?.lambda_method(:0) - processing filters (second pass)
+2013-11-19 09:32:59,344 [6] ?.lambda_method(:0) - processing one-to-many association mappings
 
-2013-11-18 17:24:21,684 [9] ?.lambda_method(:0) - checking mappings queue
+2013-11-19 09:32:59,346 [6] ?.lambda_method(:0) - mapping collection: MyStore.Domain.User.Logins -> AspNetUserLogins
 
-2013-11-18 17:24:21,684 [9] ?.lambda_method(:0) - processing one-to-many association mappings
+2013-11-19 09:32:59,352 [6] ?.lambda_method(:0) - mapping collection: MyStore.Domain.User.Claims -> AspNetUserClaims
 
-2013-11-18 17:24:21,684 [9] ?.lambda_method(:0) - processing one-to-one association property references
+2013-11-19 09:32:59,352 [6] ?.lambda_method(:0) - mapping collection: MyStore.Domain.Customer.Orders -> Orders
 
-2013-11-18 17:24:21,685 [9] ?.lambda_method(:0) - processing foreign key constraints
+2013-11-19 09:32:59,352 [6] ?.lambda_method(:0) - mapping collection: MyStore.Domain.Order.OrderLineItems -> OrderLineItems
 
-2013-11-18 17:24:21,685 [9] ?.lambda_method(:0) - processing filters (second pass)
+2013-11-19 09:32:59,353 [6] ?.lambda_method(:0) - mapping collection: MyStore.Domain.ProductMgmt.ProductCategory.Children -> ProductCategories
 
-2013-11-18 17:24:21,714 [9] ?.lambda_method(:0) - checking mappings queue
+2013-11-19 09:32:59,353 [6] ?.lambda_method(:0) - processing one-to-one association property references
 
-2013-11-18 17:24:21,714 [9] ?.lambda_method(:0) - processing one-to-many association mappings
+2013-11-19 09:32:59,353 [6] ?.lambda_method(:0) - processing foreign key constraints
 
-2013-11-18 17:24:21,714 [9] ?.lambda_method(:0) - processing one-to-one association property references
+2013-11-19 09:32:59,356 [6] ?.lambda_method(:0) - processing filters (second pass)
 
-2013-11-18 17:24:21,714 [9] ?.lambda_method(:0) - processing foreign key constraints
+2013-11-19 09:32:59,407 [6] ?.lambda_method(:0) - checking mappings queue
 
-2013-11-18 17:24:21,714 [9] ?.lambda_method(:0) - processing filters (second pass)
+2013-11-19 09:32:59,407 [6] ?.lambda_method(:0) - processing one-to-many association mappings
 
-2013-11-18 17:24:21,715 [9] ?.lambda_method(:0) - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2013-11-19 09:32:59,407 [6] ?.lambda_method(:0) - processing one-to-one association property references
 
-2013-11-18 17:24:21,718 [9] ?.lambda_method(:0) - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2013-11-19 09:32:59,408 [6] ?.lambda_method(:0) - processing foreign key constraints
 
-2013-11-18 17:24:21,742 [9] ?.lambda_method(:0) - Using dialect defined converter
+2013-11-19 09:32:59,408 [6] ?.lambda_method(:0) - processing filters (second pass)
 
-2013-11-18 17:24:21,742 [9] ?.lambda_method(:0) - Generate SQL with comments: disabled
+2013-11-19 09:32:59,438 [6] ?.lambda_method(:0) - checking mappings queue
 
-2013-11-18 17:24:21,744 [9] ?.lambda_method(:0) - Configuring ConnectionProvider
+2013-11-19 09:32:59,438 [6] ?.lambda_method(:0) - processing one-to-many association mappings
 
-2013-11-18 17:24:21,745 [9] ?.lambda_method(:0) - Transaction factory: NHibernate.Transaction.AdoNetWithDistributedTransactionFactory
+2013-11-19 09:32:59,438 [6] ?.lambda_method(:0) - processing one-to-one association property references
 
-2013-11-18 17:24:21,746 [9] ?.lambda_method(:0) - Optimize cache for minimal puts: False
+2013-11-19 09:32:59,438 [6] ?.lambda_method(:0) - processing foreign key constraints
 
-2013-11-18 17:24:21,746 [9] ?.lambda_method(:0) - Connection release mode: auto
+2013-11-19 09:32:59,439 [6] ?.lambda_method(:0) - processing filters (second pass)
 
-2013-11-18 17:24:21,746 [9] ?.lambda_method(:0) - Default batch fetch size: 1
+2013-11-19 09:32:59,440 [6] ?.lambda_method(:0) - Using dialect: NHibernate.Dialect.MsSql2008Dialect
 
-2013-11-18 17:24:21,747 [9] ?.lambda_method(:0) - Statistics: disabled
+2013-11-19 09:32:59,442 [6] ?.lambda_method(:0) - Using dialect: NHibernate.Dialect.MsSql2008Dialect
 
-2013-11-18 17:24:21,747 [9] ?.lambda_method(:0) - Deleted entity synthetic identifier rollback: disabled
+2013-11-19 09:32:59,465 [6] ?.lambda_method(:0) - Using dialect defined converter
 
-2013-11-18 17:24:21,747 [9] ?.lambda_method(:0) - Query translator: NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory
+2013-11-19 09:32:59,465 [6] ?.lambda_method(:0) - Generate SQL with comments: disabled
 
-2013-11-18 17:24:21,749 [9] ?.lambda_method(:0) - Query language substitutions: {'true'='1', 'false'='0', 'yes'=''Y'', 'no'=''N''}
+2013-11-19 09:32:59,467 [6] ?.lambda_method(:0) - Configuring ConnectionProvider
 
-2013-11-18 17:24:21,751 [9] ?.lambda_method(:0) - cache provider: NHibernate.Cache.NoCacheProvider, NHibernate, Version=3.3.1.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2013-11-19 09:32:59,468 [6] ?.lambda_method(:0) - Transaction factory: NHibernate.Transaction.AdoNetWithDistributedTransactionFactory
 
-2013-11-18 17:24:21,751 [9] ?.lambda_method(:0) - Order SQL inserts for batching: enabled
+2013-11-19 09:32:59,469 [6] ?.lambda_method(:0) - Optimize cache for minimal puts: False
 
-2013-11-18 17:24:21,752 [9] ?.lambda_method(:0) - Batcher factory: NHibernate.AdoNet.SqlClientBatchingBatcherFactory, NHibernate, Version=3.3.1.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2013-11-19 09:32:59,469 [6] ?.lambda_method(:0) - Connection release mode: auto
 
-2013-11-18 17:24:21,753 [9] ?.lambda_method(:0) - Default entity-mode: Poco
+2013-11-19 09:32:59,469 [6] ?.lambda_method(:0) - Default batch fetch size: 1
 
-2013-11-18 17:24:21,753 [9] ?.lambda_method(:0) - Named query checking : enabled
+2013-11-19 09:32:59,470 [6] ?.lambda_method(:0) - Statistics: disabled
 
-2013-11-18 17:24:21,764 [9] ?.lambda_method(:0) - building session factory
+2013-11-19 09:32:59,470 [6] ?.lambda_method(:0) - Deleted entity synthetic identifier rollback: disabled
 
-2013-11-18 17:24:21,979 [9] ?.lambda_method(:0) - no name configured
+2013-11-19 09:32:59,470 [6] ?.lambda_method(:0) - Query translator: NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory
+
+2013-11-19 09:32:59,472 [6] ?.lambda_method(:0) - Query language substitutions: {'true'='1', 'false'='0', 'yes'=''Y'', 'no'=''N''}
+
+2013-11-19 09:32:59,473 [6] ?.lambda_method(:0) - cache provider: NHibernate.Cache.NoCacheProvider, NHibernate, Version=3.3.1.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+
+2013-11-19 09:32:59,474 [6] ?.lambda_method(:0) - Order SQL inserts for batching: enabled
+
+2013-11-19 09:32:59,474 [6] ?.lambda_method(:0) - Batcher factory: NHibernate.AdoNet.SqlClientBatchingBatcherFactory, NHibernate, Version=3.3.1.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+
+2013-11-19 09:32:59,475 [6] ?.lambda_method(:0) - Default entity-mode: Poco
+
+2013-11-19 09:32:59,475 [6] ?.lambda_method(:0) - Named query checking : enabled
+
+2013-11-19 09:32:59,486 [6] ?.lambda_method(:0) - building session factory
+
+2013-11-19 09:32:59,698 [6] ?.lambda_method(:0) - no name configured
+
+2013-11-19 09:33:19,562 [6] ?.lambda_method(:0) - handling property dereference [MyStore.Domain.User (u) -> UserName (Class)]
+
+2013-11-19 09:33:19,668 [6] ?.lambda_method(:0) - select TOP (1)  user0_.Id as Id0_, user0_.UserName as UserName0_, user0_.PasswordHash as Password3_0_, user0_.SecurityStamp as Security4_0_ from AspNetUsers user0_ where user0_.UserName=@p0
+
+2013-11-19 09:33:19,673 [6] ?.lambda_method(:0) - select TOP (1)  user0_.Id as Id0_, user0_.UserName as UserName0_, user0_.PasswordHash as Password3_0_, user0_.SecurityStamp as Security4_0_ from AspNetUsers user0_ where user0_.UserName=@p0;@p0 = 'qwe' [Type: String (4000)]
+
+2013-11-19 09:33:25,484 [6] ?.lambda_method(:0) - Unable to determine if MyStore.Domain.User with assigned identifier 24eadb86-9101-4b56-8bd7-e4ffdbff37f6 is transient or detached; querying the database. Use explicit Save() or Update() in session to prevent this.
+
+2013-11-19 09:33:25,488 [6] ?.lambda_method(:0) - SELECT user_.Id, user_.UserName as UserName0_, user_.PasswordHash as Password3_0_, user_.SecurityStamp as Security4_0_ FROM AspNetUsers user_ WHERE user_.Id=@p0;@p0 = '24eadb86-9101-4b56-8bd7-e4ffdbff37f6' [Type: String (4000)]
+
+2013-11-19 09:33:25,495 [6] ?.lambda_method(:0) - processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: MyStore.Domain.User
+
+2013-11-19 09:33:25,497 [6] ?.lambda_method(:0) - done processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: MyStore.Domain.User
+
+2013-11-19 09:33:25,509 [6] ?.lambda_method(:0) - processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: MyStore.Domain.User
+
+2013-11-19 09:33:25,511 [6] ?.lambda_method(:0) - cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: MyStore.Domain.User.Logins
+
+2013-11-19 09:33:25,512 [6] ?.lambda_method(:0) - done cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: MyStore.Domain.User.Logins
+
+2013-11-19 09:33:25,512 [6] ?.lambda_method(:0) - deleting orphans for collection: MyStore.Domain.User.Logins
+
+2013-11-19 09:33:25,514 [6] ?.lambda_method(:0) - done deleting orphans for collection: MyStore.Domain.User.Logins
+
+2013-11-19 09:33:25,514 [6] ?.lambda_method(:0) - cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: MyStore.Domain.User.Roles
+
+2013-11-19 09:33:25,515 [6] ?.lambda_method(:0) - done cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: MyStore.Domain.User.Roles
+
+2013-11-19 09:33:25,515 [6] ?.lambda_method(:0) - deleting orphans for collection: MyStore.Domain.User.Roles
+
+2013-11-19 09:33:25,515 [6] ?.lambda_method(:0) - done deleting orphans for collection: MyStore.Domain.User.Roles
+
+2013-11-19 09:33:25,515 [6] ?.lambda_method(:0) - cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: MyStore.Domain.User.Claims
+
+2013-11-19 09:33:25,516 [6] ?.lambda_method(:0) - done cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: MyStore.Domain.User.Claims
+
+2013-11-19 09:33:25,516 [6] ?.lambda_method(:0) - deleting orphans for collection: MyStore.Domain.User.Claims
+
+2013-11-19 09:33:25,516 [6] ?.lambda_method(:0) - done deleting orphans for collection: MyStore.Domain.User.Claims
+
+2013-11-19 09:33:25,516 [6] ?.lambda_method(:0) - done processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: MyStore.Domain.User
+
+2013-11-19 09:33:46,446 [7] ?.lambda_method(:0) - select TOP (1)  user0_.Id as Id0_, user0_.UserName as UserName0_, user0_.PasswordHash as Password3_0_, user0_.SecurityStamp as Security4_0_ from AspNetUsers user0_ where user0_.UserName=@p0
+
+2013-11-19 09:33:46,446 [7] ?.lambda_method(:0) - select TOP (1)  user0_.Id as Id0_, user0_.UserName as UserName0_, user0_.PasswordHash as Password3_0_, user0_.SecurityStamp as Security4_0_ from AspNetUsers user0_ where user0_.UserName=@p0;@p0 = 'qwe' [Type: String (4000)]
 
