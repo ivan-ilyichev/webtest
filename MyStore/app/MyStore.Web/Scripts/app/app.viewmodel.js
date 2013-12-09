@@ -1,4 +1,4 @@
-﻿function AppViewModel(dataModel) {
+﻿function AppViewModel(dataModel, ko) {
     // Private state
     var self = this;
 
@@ -68,6 +68,8 @@
         Loading: {} // Other views are added dynamically by app.addViewModel(...).
     };
 
+    self.viewmodel = ko.observable();
+
     // UI state
     self.errors = ko.observableArray();
     self.user = ko.observable(null);
@@ -115,7 +117,9 @@
             dataModel.setAccessToken(accessToken, persistent)
         }
 
-        self.user(new UserInfoViewModel(self, userName, dataModel));
+        require(['userInfo.viewmodel'], function() {
+            self.user(new UserInfoViewModel(self, userName, dataModel));
+        });
         self.navigateToHome();
     };
 
@@ -205,14 +209,12 @@
                         && typeof (data.loginProvider) !== "undefined") {
                         if (data.hasRegistered) {
                             self.navigateToLoggedIn(data.userName, fragment.access_token, false);
-                        }
-                        else if (typeof (sessionStorage["loginUrl"]) !== "undefined") {
+                        } else if (typeof (sessionStorage["loginUrl"]) !== "undefined") {
                             loginUrl = sessionStorage["loginUrl"];
                             sessionStorage.removeItem("loginUrl");
                             self.navigateToRegisterExternal(data.userName, data.loginProvider, fragment.access_token,
                                 loginUrl, fragment.state);
-                        }
-                        else {
+                        } else {
                             self.navigateToLogin();
                         }
                     } else {
@@ -235,7 +237,31 @@
                     self.navigateToLogin();
                 });
         }
-    }
+        /*
+        var sammy = $.sammy(function() {
+            this.get('#/Customers', function() {
+                app.viewmodel({ template: 'TestTemplate', item: ko.observable({ Name: 'Name', Description: 'Lorem ipsum' }) });
+                //alert('Customers');
+            });
+        });
+        sammy.run();
+        */
+    };
 }
 
-var app = new AppViewModel(new AppDataModel());
+define(["app.datamodel", "knockout", "home.viewmodel", "login.viewmodel", "register.viewmodel", "registerExternal.viewmodel", "manage.viewmodel"], function (dataModel, ko, home, login, register, registerExternal, manage) {
+
+    var self = new AppViewModel(dataModel, ko);
+    self.addViewModel(home);
+    self.addViewModel(login);
+    self.addViewModel(register);
+    self.addViewModel(registerExternal);
+    self.addViewModel(manage);
+    
+    self.initialize();
+
+    return self;
+});
+
+
+

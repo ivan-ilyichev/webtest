@@ -15,6 +15,8 @@ namespace MyStore.Web.App_Start
                 "~/Scripts/knockout.validation.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/app").Include(
+                "~/Scripts/sammy-0.7.4.js",
+
                 "~/Scripts/app/ajaxPrefilters.js",
                 "~/Scripts/app/app.bindings.js",
                 "~/Scripts/app/app.datamodel.js",

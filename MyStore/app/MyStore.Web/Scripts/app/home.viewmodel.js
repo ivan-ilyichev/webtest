@@ -1,11 +1,14 @@
-﻿function HomeViewModel(app, dataModel) {
-    var self = this;
+﻿define([], function () {
 
-    // HomeViewModel currently does not require data binding, so there are no visible members.
-}
+    function HomeViewModel(app, dataModel) {
+        var self = this;
 
-app.addViewModel({
-    name: "Home",
-    bindingMemberName: "home",
-    factory: HomeViewModel
+        // HomeViewModel currently does not require data binding, so there are no visible members.
+    }
+
+    return {
+        name: "Home",
+        bindingMemberName: "home",
+        factory: HomeViewModel
+    };
 });

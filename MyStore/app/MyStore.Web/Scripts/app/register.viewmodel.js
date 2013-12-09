@@ -65,8 +65,12 @@
     };
 }
 
-app.addViewModel({
-    name: "Register",
-    bindingMemberName: "register",
-    factory: RegisterViewModel
+define([], function () {
+    return {
+        name: "Register",
+        bindingMemberName: "register",
+        factory: RegisterViewModel
+    };
 });
+
+

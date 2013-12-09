@@ -1,4 +1,4 @@
-﻿function AppDataModel() {
+﻿define(["jquery"], function ($) {
     var self = this,
         // Routes
         addExternalLoginUrl = "/api/Account/AddExternalLogin",
@@ -13,6 +13,7 @@
         userInfoUrl = "/api/Account/UserInfo";
 
     // Route operations
+
     function externalLoginsUrl(returnUrl, generateState) {
         return "/api/Account/ExternalLogins?returnUrl=" + (encodeURIComponent(returnUrl)) +
             "&generateState=" + (generateState ? "true" : "false");
@@ -24,6 +25,7 @@
     }
 
     // Other private operations
+
     function getSecurityHeaders() {
         var accessToken = sessionStorage["accessToken"] || localStorage["accessToken"];
 
@@ -35,12 +37,12 @@
     }
 
     // Operations
-    self.clearAccessToken = function () {
+    self.clearAccessToken = function() {
         localStorage.removeItem("accessToken");
         sessionStorage.removeItem("accessToken");
     };
 
-    self.setAccessToken = function (accessToken, persistent) {
+    self.setAccessToken = function(accessToken, persistent) {
         if (persistent) {
             localStorage["accessToken"] = accessToken;
         } else {
@@ -48,7 +50,7 @@
         }
     };
 
-    self.toErrorsArray = function (data) {
+    self.toErrorsArray = function(data) {
         var errors = new Array(),
             items;
 
@@ -79,7 +81,7 @@
     self.returnUrl = siteUrl;
 
     // Data access operations
-    self.addExternalLogin = function (data) {
+    self.addExternalLogin = function(data) {
         return $.ajax(addExternalLoginUrl, {
             type: "POST",
             data: data,
@@ -87,7 +89,7 @@
         });
     };
 
-    self.changePassword = function (data) {
+    self.changePassword = function(data) {
         return $.ajax(changePasswordUrl, {
             type: "POST",
             data: data,
@@ -95,24 +97,24 @@
         });
     };
 
-    self.getExternalLogins = function (returnUrl, generateState) {
+    self.getExternalLogins = function(returnUrl, generateState) {
         return $.ajax(externalLoginsUrl(returnUrl, generateState), {
             cache: false,
             headers: getSecurityHeaders()
         });
     };
 
-    self.getManageInfo = function (returnUrl, generateState) {
+    self.getManageInfo = function(returnUrl, generateState) {
         return $.ajax(manageInfoUrl(returnUrl, generateState), {
             cache: false,
             headers: getSecurityHeaders()
         });
     };
 
-    self.getUserInfo = function (accessToken) {
+    self.getUserInfo = function(accessToken) {
         var headers;
 
-        if (typeof (accessToken) !== "undefined") {
+        if (typeof(accessToken) !== "undefined") {
             headers = {
                 "Authorization": "Bearer " + accessToken
             };
@@ -126,28 +128,28 @@
         });
     };
 
-    self.login = function (data) {
+    self.login = function(data) {
         return $.ajax(loginUrl, {
             type: "POST",
             data: data
         });
     };
 
-    self.logout = function () {
+    self.logout = function() {
         return $.ajax(logoutUrl, {
             type: "POST",
             headers: getSecurityHeaders()
         });
     };
 
-    self.register = function (data) {
+    self.register = function(data) {
         return $.ajax(registerUrl, {
             type: "POST",
             data: data
         });
     };
 
-    self.registerExternal = function (accessToken, data) {
+    self.registerExternal = function(accessToken, data) {
         return $.ajax(registerExternalUrl, {
             type: "POST",
             data: data,
@@ -157,7 +159,7 @@
         });
     };
 
-    self.removeLogin = function (data) {
+    self.removeLogin = function(data) {
         return $.ajax(removeLoginUrl, {
             type: "POST",
             data: data,
@@ -165,11 +167,14 @@
         });
     };
 
-    self.setPassword = function (data) {
+    self.setPassword = function(data) {
         return $.ajax(setPasswordUrl, {
             type: "POST",
             data: data,
             headers: getSecurityHeaders()
         });
     };
-}
+
+    return self;
+});
+

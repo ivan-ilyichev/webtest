@@ -47,19 +47,22 @@
     };
 }
 
-app.addViewModel({
-    name: "RegisterExternal",
-    bindingMemberName: "registerExternal",
-    factory: RegisterExternalViewModel,
-    navigatorFactory: function (app) {
-        return function (userName, loginProvider, externalAccessToken, loginUrl, state) {
-            app.errors.removeAll();
-            app.view(app.Views.RegisterExternal);
-            app.registerExternal().userName(userName);
-            app.registerExternal().loginProvider(loginProvider);
-            app.registerExternal().externalAccessToken = externalAccessToken;
-            app.registerExternal().loginUrl = loginUrl;
-            app.registerExternal().state = state;
-        };
-    }
+define([], function () {
+
+    return {
+        name: "RegisterExternal",
+        bindingMemberName: "registerExternal",
+        factory: RegisterExternalViewModel,
+        navigatorFactory: function(app) {
+            return function(userName, loginProvider, externalAccessToken, loginUrl, state) {
+                app.errors.removeAll();
+                app.view(app.Views.RegisterExternal);
+                app.registerExternal().userName(userName);
+                app.registerExternal().loginProvider(loginProvider);
+                app.registerExternal().externalAccessToken = externalAccessToken;
+                app.registerExternal().loginUrl = loginUrl;
+                app.registerExternal().state = state;
+            };
+        }
+    };
 });

@@ -5,6 +5,12 @@
     <p><a href="http://asp.net" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
 </div>
 <div class="row">
+    
+    <div class="col-md-4">
+        <h2>Customers</h2>
+        <p><a class="btn btn-default" href="#/Customers">Press to see &raquo;</a></p>
+    </div>
+
     <div class="col-md-4">
         <h2>Getting started</h2>
         <p>
@@ -25,3 +31,15 @@
     </div>
 </div>
 <!-- /ko -->
+
+<!-- ko if: viewmodel() -->
+<div data-bind="template: { name: viewmodel().template, data: viewmodel }">
+</div>
+<!-- /ko -->
+<script type="text/html" id="TestTemplate">
+    <div>
+        <b>Name:</b> <span data-bind="text: item().Name"></span><br />
+        <b>Description:</b> <span data-bind="text: item().Description"></span><br />
+    </div>
+</script>
+
