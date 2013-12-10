@@ -22,16 +22,38 @@
     shim: {
         "bootstrap": ["jquery"],
         "knockout.validation": ["knockout"]
+    },
+    map: {
+        'knockout.validation': {
+            'knockout': 'ko'
+        }
     }
 });
+
+/*
+path: {
+        'ko': '/path/to/knockout',
+        'ko.validation': '/path/to/knockout/validation'
+    },
+    shim: {
+        'ko.validation': ['ko']
+    },
+    map: {
+        'ko.validation': {
+            'knockout': 'ko'
+        }
+    }
+*/
 
 require(["knockout"], function (ko) {
     //manually set the global ko property
     window.ko = ko;
 
     //then bring in knockout validation
-    require(["jquery", "knockout", "app.viewmodel", "knockout.validation", "domReady!"], function ($, k, app) {
-        
+    require(["jquery", "knockout", "app.viewmodel", "knockout.validation", "domReady!"], function ($, k, app, kovalidation) {
+
+        //window.ko.validation = kovalidation;
+
         // Activate Knockout
         ko.validation.init({ grouping: { observable: false } });
         ko.applyBindings(app);

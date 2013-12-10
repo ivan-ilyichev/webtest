@@ -95,7 +95,7 @@ function ExternalLoginProviderViewModel(app, data) {
     };
 }
 
-define(["ajaxPrefilters"], function () {
+define(["ajaxPrefilters", "knockout", "knockout.validation"], function (ko) {
     return {
         name: "Login",
         bindingMemberName: "login",

@@ -119,8 +119,8 @@
 
         require(['userInfo.viewmodel'], function() {
             self.user(new UserInfoViewModel(self, userName, dataModel));
+            self.navigateToHome();
         });
-        self.navigateToHome();
     };
 
     self.navigateToLoggedOff = function () {
