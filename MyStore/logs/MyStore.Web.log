@@ -1,58 +1,170 @@
-2013-12-10 09:51:49,978 [25] ?.lambda_method(:0) - NHibernate 3.3.1.4000 (3.3.1.4000)
+2013-12-10 09:53:59,017 [7] NHibernate.Cfg.Environment..cctor(:0) - NHibernate 3.3.1.4000 (3.3.1.4000)
 
-2013-12-10 09:51:50,002 [25] ?.lambda_method(:0) - hibernate-configuration section not found in application configuration file
+2013-12-10 09:53:59,048 [7] NHibernate.Cfg.Environment.LoadGlobalPropertiesFromAppConfig(:0) - hibernate-configuration section not found in application configuration file
 
-2013-12-10 09:51:50,003 [25] ?.lambda_method(:0) - Bytecode provider name : lcg
+2013-12-10 09:53:59,049 [7] NHibernate.Cfg.Environment.BuildBytecodeProvider(:0) - Bytecode provider name : lcg
 
-2013-12-10 09:51:50,005 [25] ?.lambda_method(:0) - Using reflection optimizer
+2013-12-10 09:53:59,051 [7] NHibernate.Cfg.Configuration.Reset(:0) - Using reflection optimizer
 
-2013-12-10 09:51:50,057 [25] ?.lambda_method(:0) - checking mappings queue
+2013-12-10 09:53:59,072 [7] NHibernate.Cfg.Configuration.AddAssembly(:0) - No mapped documents found in assembly: MyStore.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 
-2013-12-10 09:51:50,057 [25] ?.lambda_method(:0) - processing one-to-many association mappings
+2013-12-10 09:53:59,443 [7] NHibernate.Dialect.Dialect..ctor(:0) - Using dialect: NHibernate.Dialect.MsSql2008Dialect
 
-2013-12-10 09:51:50,057 [25] ?.lambda_method(:0) - processing one-to-one association property references
+2013-12-10 09:53:59,514 [7] NHibernate.Cfg.XmlHbmBinding.RootClassBinder.Bind(:0) - Mapping class: MyStore.Domain.NhIdentityUser -> AspNetUsers
 
-2013-12-10 09:51:50,058 [25] ?.lambda_method(:0) - processing foreign key constraints
+2013-12-10 09:53:59,612 [7] NHibernate.Cfg.XmlHbmBinding.CollectionBinder.BindCollection(:0) - Mapping collection: MyStore.Domain.NhIdentityUser.Roles -> AspNetUserRoles
 
-2013-12-10 09:51:50,064 [25] ?.lambda_method(:0) - processing filters (second pass)
+2013-12-10 09:53:59,619 [7] NHibernate.Cfg.XmlHbmBinding.RootClassBinder.Bind(:0) - Mapping class: MyStore.Domain.Security.NhIdentityUserRole -> AspNetRoles
 
-2013-12-10 09:51:50,113 [25] ?.lambda_method(:0) - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2013-12-10 09:53:59,619 [7] NHibernate.Cfg.XmlHbmBinding.RootClassBinder.Bind(:0) - Mapping class: MyStore.Domain.Security.NhIdentityUserLogin -> AspNetUserLogins
 
-2013-12-10 09:51:50,163 [25] ?.lambda_method(:0) - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2013-12-10 09:53:59,648 [7] NHibernate.Cfg.XmlHbmBinding.RootClassBinder.Bind(:0) - Mapping class: MyStore.Domain.Security.NhIdentityUserClaim -> AspNetUserClaims
 
-2013-12-10 09:51:50,197 [25] ?.lambda_method(:0) - Using dialect defined converter
+2013-12-10 09:53:59,673 [7] NHibernate.Cfg.Configuration.SecondPassCompile(:0) - checking mappings queue
 
-2013-12-10 09:51:50,198 [25] ?.lambda_method(:0) - Generate SQL with comments: disabled
+2013-12-10 09:53:59,674 [7] NHibernate.Cfg.Configuration.SecondPassCompile(:0) - processing one-to-many association mappings
 
-2013-12-10 09:51:50,201 [25] ?.lambda_method(:0) - Configuring ConnectionProvider
+2013-12-10 09:53:59,681 [7] NHibernate.Cfg.XmlHbmBinding.CollectionBinder.BindCollectionSecondPass(:0) - mapping collection: MyStore.Domain.NhIdentityUser.Logins -> AspNetUserLogins
 
-2013-12-10 09:51:50,204 [25] ?.lambda_method(:0) - Transaction factory: NHibernate.Transaction.AdoNetWithDistributedTransactionFactory
+2013-12-10 09:53:59,698 [7] NHibernate.Cfg.XmlHbmBinding.CollectionBinder.BindCollectionSecondPass(:0) - mapping collection: MyStore.Domain.NhIdentityUser.Claims -> AspNetUserClaims
 
-2013-12-10 09:51:50,205 [25] ?.lambda_method(:0) - Optimize cache for minimal puts: False
+2013-12-10 09:53:59,698 [7] NHibernate.Cfg.Configuration.SecondPassCompile(:0) - processing one-to-one association property references
 
-2013-12-10 09:51:50,205 [25] ?.lambda_method(:0) - Connection release mode: auto
+2013-12-10 09:53:59,698 [7] NHibernate.Cfg.Configuration.SecondPassCompile(:0) - processing foreign key constraints
 
-2013-12-10 09:51:50,206 [25] ?.lambda_method(:0) - Default batch fetch size: 1
+2013-12-10 09:53:59,705 [7] NHibernate.Cfg.Configuration.SecondPassCompile(:0) - processing filters (second pass)
 
-2013-12-10 09:51:50,206 [25] ?.lambda_method(:0) - Statistics: disabled
+2013-12-10 09:53:59,813 [7] NHibernate.Cfg.Configuration.SecondPassCompile(:0) - checking mappings queue
 
-2013-12-10 09:51:50,206 [25] ?.lambda_method(:0) - Deleted entity synthetic identifier rollback: disabled
+2013-12-10 09:53:59,813 [7] NHibernate.Cfg.Configuration.SecondPassCompile(:0) - processing one-to-many association mappings
 
-2013-12-10 09:51:50,207 [25] ?.lambda_method(:0) - Query translator: NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory
+2013-12-10 09:53:59,813 [7] NHibernate.Cfg.Configuration.SecondPassCompile(:0) - processing one-to-one association property references
 
-2013-12-10 09:51:50,211 [25] ?.lambda_method(:0) - Query language substitutions: {'true'='1', 'false'='0', 'yes'=''Y'', 'no'=''N''}
+2013-12-10 09:53:59,814 [7] NHibernate.Cfg.Configuration.SecondPassCompile(:0) - processing foreign key constraints
 
-2013-12-10 09:51:50,214 [25] ?.lambda_method(:0) - cache provider: NHibernate.Cache.NoCacheProvider, NHibernate, Version=3.3.1.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2013-12-10 09:53:59,814 [7] NHibernate.Cfg.Configuration.SecondPassCompile(:0) - processing filters (second pass)
 
-2013-12-10 09:51:50,215 [25] ?.lambda_method(:0) - Order SQL inserts for batching: enabled
+2013-12-10 09:53:59,840 [7] NHibernate.Cfg.Configuration.SecondPassCompile(:0) - checking mappings queue
 
-2013-12-10 09:51:50,216 [25] ?.lambda_method(:0) - Batcher factory: NHibernate.AdoNet.SqlClientBatchingBatcherFactory, NHibernate, Version=3.3.1.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2013-12-10 09:53:59,840 [7] NHibernate.Cfg.Configuration.SecondPassCompile(:0) - processing one-to-many association mappings
 
-2013-12-10 09:51:50,217 [25] ?.lambda_method(:0) - Default entity-mode: Poco
+2013-12-10 09:53:59,840 [7] NHibernate.Cfg.Configuration.SecondPassCompile(:0) - processing one-to-one association property references
 
-2013-12-10 09:51:50,217 [25] ?.lambda_method(:0) - Named query checking : enabled
+2013-12-10 09:53:59,841 [7] NHibernate.Cfg.Configuration.SecondPassCompile(:0) - processing foreign key constraints
 
-2013-12-10 09:51:50,242 [25] ?.lambda_method(:0) - building session factory
+2013-12-10 09:53:59,841 [7] NHibernate.Cfg.Configuration.SecondPassCompile(:0) - processing filters (second pass)
 
-2013-12-10 09:51:50,690 [25] ?.lambda_method(:0) - no name configured
+2013-12-10 09:53:59,843 [7] NHibernate.Dialect.Dialect..ctor(:0) - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+
+2013-12-10 09:53:59,856 [7] NHibernate.Dialect.Dialect..ctor(:0) - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+
+2013-12-10 09:53:59,903 [7] NHibernate.Exceptions.SQLExceptionConverterFactory.BuildSQLExceptionConverter(:0) - Using dialect defined converter
+
+2013-12-10 09:53:59,904 [7] NHibernate.Cfg.SettingsFactory.BuildSettings(:0) - Generate SQL with comments: disabled
+
+2013-12-10 09:53:59,907 [7] NHibernate.Connection.ConnectionProvider.Configure(:0) - Configuring ConnectionProvider
+
+2013-12-10 09:53:59,912 [7] NHibernate.Cfg.SettingsFactory.CreateTransactionFactory(:0) - Transaction factory: NHibernate.Transaction.AdoNetWithDistributedTransactionFactory
+
+2013-12-10 09:53:59,912 [7] NHibernate.Cfg.SettingsFactory.BuildSettings(:0) - Optimize cache for minimal puts: False
+
+2013-12-10 09:53:59,913 [7] NHibernate.Cfg.SettingsFactory.BuildSettings(:0) - Connection release mode: auto
+
+2013-12-10 09:53:59,913 [7] NHibernate.Cfg.SettingsFactory.BuildSettings(:0) - Default batch fetch size: 1
+
+2013-12-10 09:53:59,913 [7] NHibernate.Cfg.SettingsFactory.BuildSettings(:0) - Statistics: disabled
+
+2013-12-10 09:53:59,913 [7] NHibernate.Cfg.SettingsFactory.BuildSettings(:0) - Deleted entity synthetic identifier rollback: disabled
+
+2013-12-10 09:53:59,914 [7] NHibernate.Cfg.SettingsFactory.CreateQueryTranslatorFactory(:0) - Query translator: NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory
+
+2013-12-10 09:53:59,919 [7] NHibernate.Cfg.SettingsFactory.BuildSettings(:0) - Query language substitutions: {'true'='1', 'false'='0', 'yes'=''Y'', 'no'=''N''}
+
+2013-12-10 09:53:59,922 [7] NHibernate.Cfg.SettingsFactory.CreateCacheProvider(:0) - cache provider: NHibernate.Cache.NoCacheProvider, NHibernate, Version=3.3.1.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+
+2013-12-10 09:53:59,922 [7] NHibernate.Cfg.SettingsFactory.BuildSettings(:0) - Order SQL inserts for batching: enabled
+
+2013-12-10 09:53:59,925 [7] NHibernate.Cfg.SettingsFactory.CreateBatcherFactory(:0) - Batcher factory: NHibernate.AdoNet.SqlClientBatchingBatcherFactory, NHibernate, Version=3.3.1.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+
+2013-12-10 09:53:59,925 [7] NHibernate.Cfg.SettingsFactory.BuildSettings(:0) - Default entity-mode: Poco
+
+2013-12-10 09:53:59,925 [7] NHibernate.Cfg.SettingsFactory.BuildSettings(:0) - Named query checking : enabled
+
+2013-12-10 09:53:59,951 [7] NHibernate.Impl.SessionFactoryImpl..ctor(:0) - building session factory
+
+2013-12-10 09:54:00,452 [7] NHibernate.Impl.SessionFactoryImpl..ctor(:0) - no name configured
+
+2013-12-10 09:57:07,619 [18] NHibernate.Hql.Ast.ANTLR.Tree.FromElement.HandlePropertyBeingDereferenced(:0) - handling property dereference [MyStore.Domain.NhIdentityUser (u) -> UserName (Class)]
+
+2013-12-10 09:57:07,939 [18] NHibernate.Loader.Loader.GetResultSet(:0) - select TOP (1)  nhidentity0_.Id as Id0_, nhidentity0_.UserName as UserName0_, nhidentity0_.PasswordHash as Password3_0_, nhidentity0_.SecurityStamp as Security4_0_, nhidentity0_.Discriminator as Discrimi5_0_, nhidentity0_.ApplicationId as Applicat6_0_, nhidentity0_.LoweredUserName as LoweredU7_0_, nhidentity0_.IsAnonymous as IsAnonym8_0_, nhidentity0_.LastActivityDate as LastActi9_0_, nhidentity0_.IsApproved as IsApproved0_, nhidentity0_.IsLockedOut as IsLocke11_0_, nhidentity0_.CreateDate as CreateDate0_, nhidentity0_.LastLoginDate as LastLog13_0_, nhidentity0_.LastPasswordChangedDate as LastPas14_0_, nhidentity0_.LastLockoutDate as LastLoc15_0_, nhidentity0_.FailedPasswordAttemptCount as FailedP16_0_, nhidentity0_.FailedPasswordAttemptWindowStart as FailedP17_0_, nhidentity0_.FailedPasswordAnswerAttemptCount as FailedP18_0_, nhidentity0_.FailedPasswordAnswerAttemptWindowStart as FailedP19_0_ from AspNetUsers nhidentity0_ where nhidentity0_.UserName=@p0
+
+2013-12-10 09:57:07,951 [18] NHibernate.AdoNet.Util.SqlStatementLogger.LogCommand(:0) - select TOP (1)  nhidentity0_.Id as Id0_, nhidentity0_.UserName as UserName0_, nhidentity0_.PasswordHash as Password3_0_, nhidentity0_.SecurityStamp as Security4_0_, nhidentity0_.Discriminator as Discrimi5_0_, nhidentity0_.ApplicationId as Applicat6_0_, nhidentity0_.LoweredUserName as LoweredU7_0_, nhidentity0_.IsAnonymous as IsAnonym8_0_, nhidentity0_.LastActivityDate as LastActi9_0_, nhidentity0_.IsApproved as IsApproved0_, nhidentity0_.IsLockedOut as IsLocke11_0_, nhidentity0_.CreateDate as CreateDate0_, nhidentity0_.LastLoginDate as LastLog13_0_, nhidentity0_.LastPasswordChangedDate as LastPas14_0_, nhidentity0_.LastLockoutDate as LastLoc15_0_, nhidentity0_.FailedPasswordAttemptCount as FailedP16_0_, nhidentity0_.FailedPasswordAttemptWindowStart as FailedP17_0_, nhidentity0_.FailedPasswordAnswerAttemptCount as FailedP18_0_, nhidentity0_.FailedPasswordAnswerAttemptWindowStart as FailedP19_0_ from AspNetUsers nhidentity0_ where nhidentity0_.UserName=@p0;@p0 = 'test2' [Type: String (4000)]
+
+2013-12-10 09:57:11,957 [18] NHibernate.Hql.Ast.ANTLR.Tree.FromElement.HandlePropertyBeingDereferenced(:0) - handling property dereference [MyStore.Domain.NhIdentityUser (u) -> UserName (Class)]
+
+2013-12-10 09:57:11,959 [18] NHibernate.Loader.Loader.GetResultSet(:0) - select TOP (1)  nhidentity0_.Id as Id0_, nhidentity0_.UserName as UserName0_, nhidentity0_.PasswordHash as Password3_0_, nhidentity0_.SecurityStamp as Security4_0_, nhidentity0_.Discriminator as Discrimi5_0_, nhidentity0_.ApplicationId as Applicat6_0_, nhidentity0_.LoweredUserName as LoweredU7_0_, nhidentity0_.IsAnonymous as IsAnonym8_0_, nhidentity0_.LastActivityDate as LastActi9_0_, nhidentity0_.IsApproved as IsApproved0_, nhidentity0_.IsLockedOut as IsLocke11_0_, nhidentity0_.CreateDate as CreateDate0_, nhidentity0_.LastLoginDate as LastLog13_0_, nhidentity0_.LastPasswordChangedDate as LastPas14_0_, nhidentity0_.LastLockoutDate as LastLoc15_0_, nhidentity0_.FailedPasswordAttemptCount as FailedP16_0_, nhidentity0_.FailedPasswordAttemptWindowStart as FailedP17_0_, nhidentity0_.FailedPasswordAnswerAttemptCount as FailedP18_0_, nhidentity0_.FailedPasswordAnswerAttemptWindowStart as FailedP19_0_ from AspNetUsers nhidentity0_ where nhidentity0_.UserName=@p0
+
+2013-12-10 09:57:11,959 [18] NHibernate.AdoNet.Util.SqlStatementLogger.LogCommand(:0) - select TOP (1)  nhidentity0_.Id as Id0_, nhidentity0_.UserName as UserName0_, nhidentity0_.PasswordHash as Password3_0_, nhidentity0_.SecurityStamp as Security4_0_, nhidentity0_.Discriminator as Discrimi5_0_, nhidentity0_.ApplicationId as Applicat6_0_, nhidentity0_.LoweredUserName as LoweredU7_0_, nhidentity0_.IsAnonymous as IsAnonym8_0_, nhidentity0_.LastActivityDate as LastActi9_0_, nhidentity0_.IsApproved as IsApproved0_, nhidentity0_.IsLockedOut as IsLocke11_0_, nhidentity0_.CreateDate as CreateDate0_, nhidentity0_.LastLoginDate as LastLog13_0_, nhidentity0_.LastPasswordChangedDate as LastPas14_0_, nhidentity0_.LastLockoutDate as LastLoc15_0_, nhidentity0_.FailedPasswordAttemptCount as FailedP16_0_, nhidentity0_.FailedPasswordAttemptWindowStart as FailedP17_0_, nhidentity0_.FailedPasswordAnswerAttemptCount as FailedP18_0_, nhidentity0_.FailedPasswordAnswerAttemptWindowStart as FailedP19_0_ from AspNetUsers nhidentity0_ where nhidentity0_.UserName=@p0;@p0 = 'test1' [Type: String (4000)]
+
+2013-12-10 09:57:12,002 [42] NHibernate.Hql.Ast.ANTLR.Tree.FromElement.HandlePropertyBeingDereferenced(:0) - handling property dereference [MyStore.Domain.NhIdentityUser (u) -> Id (Class)]
+
+2013-12-10 09:57:12,003 [42] NHibernate.Loader.Loader.GetResultSet(:0) - select TOP (1)  nhidentity0_.Id as Id0_, nhidentity0_.UserName as UserName0_, nhidentity0_.PasswordHash as Password3_0_, nhidentity0_.SecurityStamp as Security4_0_, nhidentity0_.Discriminator as Discrimi5_0_, nhidentity0_.ApplicationId as Applicat6_0_, nhidentity0_.LoweredUserName as LoweredU7_0_, nhidentity0_.IsAnonymous as IsAnonym8_0_, nhidentity0_.LastActivityDate as LastActi9_0_, nhidentity0_.IsApproved as IsApproved0_, nhidentity0_.IsLockedOut as IsLocke11_0_, nhidentity0_.CreateDate as CreateDate0_, nhidentity0_.LastLoginDate as LastLog13_0_, nhidentity0_.LastPasswordChangedDate as LastPas14_0_, nhidentity0_.LastLockoutDate as LastLoc15_0_, nhidentity0_.FailedPasswordAttemptCount as FailedP16_0_, nhidentity0_.FailedPasswordAttemptWindowStart as FailedP17_0_, nhidentity0_.FailedPasswordAnswerAttemptCount as FailedP18_0_, nhidentity0_.FailedPasswordAnswerAttemptWindowStart as FailedP19_0_ from AspNetUsers nhidentity0_ where nhidentity0_.Id=@p0
+
+2013-12-10 09:57:12,004 [42] NHibernate.AdoNet.Util.SqlStatementLogger.LogCommand(:0) - select TOP (1)  nhidentity0_.Id as Id0_, nhidentity0_.UserName as UserName0_, nhidentity0_.PasswordHash as Password3_0_, nhidentity0_.SecurityStamp as Security4_0_, nhidentity0_.Discriminator as Discrimi5_0_, nhidentity0_.ApplicationId as Applicat6_0_, nhidentity0_.LoweredUserName as LoweredU7_0_, nhidentity0_.IsAnonymous as IsAnonym8_0_, nhidentity0_.LastActivityDate as LastActi9_0_, nhidentity0_.IsApproved as IsApproved0_, nhidentity0_.IsLockedOut as IsLocke11_0_, nhidentity0_.CreateDate as CreateDate0_, nhidentity0_.LastLoginDate as LastLog13_0_, nhidentity0_.LastPasswordChangedDate as LastPas14_0_, nhidentity0_.LastLockoutDate as LastLoc15_0_, nhidentity0_.FailedPasswordAttemptCount as FailedP16_0_, nhidentity0_.FailedPasswordAttemptWindowStart as FailedP17_0_, nhidentity0_.FailedPasswordAnswerAttemptCount as FailedP18_0_, nhidentity0_.FailedPasswordAnswerAttemptWindowStart as FailedP19_0_ from AspNetUsers nhidentity0_ where nhidentity0_.Id=@p0;@p0 = '3c5dd2c9-29d9-4adc-ba3a-eeb77323ded3' [Type: String (4000)]
+
+2013-12-10 09:57:12,038 [42] NHibernate.Loader.Loader.GetResultSet(:0) - SELECT roles0_.UserId as UserId1_, roles0_.RoleId as RoleId1_, nhidentity1_.Id as Id2_0_, nhidentity1_.Name as Name2_0_ FROM AspNetUserRoles roles0_ left outer join AspNetRoles nhidentity1_ on roles0_.RoleId=nhidentity1_.Id WHERE roles0_.UserId=@p0
+
+2013-12-10 09:57:12,040 [42] NHibernate.AdoNet.Util.SqlStatementLogger.LogCommand(:0) - SELECT roles0_.UserId as UserId1_, roles0_.RoleId as RoleId1_, nhidentity1_.Id as Id2_0_, nhidentity1_.Name as Name2_0_ FROM AspNetUserRoles roles0_ left outer join AspNetRoles nhidentity1_ on roles0_.RoleId=nhidentity1_.Id WHERE roles0_.UserId=@p0;@p0 = '3c5dd2c9-29d9-4adc-ba3a-eeb77323ded3' [Type: String (4000)]
+
+2013-12-10 09:57:12,081 [18] NHibernate.Loader.Loader.GetResultSet(:0) - select TOP (1)  nhidentity0_.Id as Id0_, nhidentity0_.UserName as UserName0_, nhidentity0_.PasswordHash as Password3_0_, nhidentity0_.SecurityStamp as Security4_0_, nhidentity0_.Discriminator as Discrimi5_0_, nhidentity0_.ApplicationId as Applicat6_0_, nhidentity0_.LoweredUserName as LoweredU7_0_, nhidentity0_.IsAnonymous as IsAnonym8_0_, nhidentity0_.LastActivityDate as LastActi9_0_, nhidentity0_.IsApproved as IsApproved0_, nhidentity0_.IsLockedOut as IsLocke11_0_, nhidentity0_.CreateDate as CreateDate0_, nhidentity0_.LastLoginDate as LastLog13_0_, nhidentity0_.LastPasswordChangedDate as LastPas14_0_, nhidentity0_.LastLockoutDate as LastLoc15_0_, nhidentity0_.FailedPasswordAttemptCount as FailedP16_0_, nhidentity0_.FailedPasswordAttemptWindowStart as FailedP17_0_, nhidentity0_.FailedPasswordAnswerAttemptCount as FailedP18_0_, nhidentity0_.FailedPasswordAnswerAttemptWindowStart as FailedP19_0_ from AspNetUsers nhidentity0_ where nhidentity0_.Id=@p0
+
+2013-12-10 09:57:12,082 [18] NHibernate.AdoNet.Util.SqlStatementLogger.LogCommand(:0) - select TOP (1)  nhidentity0_.Id as Id0_, nhidentity0_.UserName as UserName0_, nhidentity0_.PasswordHash as Password3_0_, nhidentity0_.SecurityStamp as Security4_0_, nhidentity0_.Discriminator as Discrimi5_0_, nhidentity0_.ApplicationId as Applicat6_0_, nhidentity0_.LoweredUserName as LoweredU7_0_, nhidentity0_.IsAnonymous as IsAnonym8_0_, nhidentity0_.LastActivityDate as LastActi9_0_, nhidentity0_.IsApproved as IsApproved0_, nhidentity0_.IsLockedOut as IsLocke11_0_, nhidentity0_.CreateDate as CreateDate0_, nhidentity0_.LastLoginDate as LastLog13_0_, nhidentity0_.LastPasswordChangedDate as LastPas14_0_, nhidentity0_.LastLockoutDate as LastLoc15_0_, nhidentity0_.FailedPasswordAttemptCount as FailedP16_0_, nhidentity0_.FailedPasswordAttemptWindowStart as FailedP17_0_, nhidentity0_.FailedPasswordAnswerAttemptCount as FailedP18_0_, nhidentity0_.FailedPasswordAnswerAttemptWindowStart as FailedP19_0_ from AspNetUsers nhidentity0_ where nhidentity0_.Id=@p0;@p0 = '3c5dd2c9-29d9-4adc-ba3a-eeb77323ded3' [Type: String (4000)]
+
+2013-12-10 09:57:12,086 [18] NHibernate.Loader.Loader.GetResultSet(:0) - SELECT claims0_.User_Id as User4_1_, claims0_.Id as Id1_, claims0_.Id as Id4_0_, claims0_.ClaimType as ClaimType4_0_, claims0_.ClaimValue as ClaimValue4_0_, claims0_.User_Id as User4_4_0_ FROM AspNetUserClaims claims0_ WHERE claims0_.User_Id=@p0
+
+2013-12-10 09:57:12,087 [18] NHibernate.AdoNet.Util.SqlStatementLogger.LogCommand(:0) - SELECT claims0_.User_Id as User4_1_, claims0_.Id as Id1_, claims0_.Id as Id4_0_, claims0_.ClaimType as ClaimType4_0_, claims0_.ClaimValue as ClaimValue4_0_, claims0_.User_Id as User4_4_0_ FROM AspNetUserClaims claims0_ WHERE claims0_.User_Id=@p0;@p0 = '3c5dd2c9-29d9-4adc-ba3a-eeb77323ded3' [Type: String (4000)]
+
+2013-12-10 09:57:12,092 [42] NHibernate.Loader.Loader.GetResultSet(:0) - select TOP (1)  nhidentity0_.Id as Id0_, nhidentity0_.UserName as UserName0_, nhidentity0_.PasswordHash as Password3_0_, nhidentity0_.SecurityStamp as Security4_0_, nhidentity0_.Discriminator as Discrimi5_0_, nhidentity0_.ApplicationId as Applicat6_0_, nhidentity0_.LoweredUserName as LoweredU7_0_, nhidentity0_.IsAnonymous as IsAnonym8_0_, nhidentity0_.LastActivityDate as LastActi9_0_, nhidentity0_.IsApproved as IsApproved0_, nhidentity0_.IsLockedOut as IsLocke11_0_, nhidentity0_.CreateDate as CreateDate0_, nhidentity0_.LastLoginDate as LastLog13_0_, nhidentity0_.LastPasswordChangedDate as LastPas14_0_, nhidentity0_.LastLockoutDate as LastLoc15_0_, nhidentity0_.FailedPasswordAttemptCount as FailedP16_0_, nhidentity0_.FailedPasswordAttemptWindowStart as FailedP17_0_, nhidentity0_.FailedPasswordAnswerAttemptCount as FailedP18_0_, nhidentity0_.FailedPasswordAnswerAttemptWindowStart as FailedP19_0_ from AspNetUsers nhidentity0_ where nhidentity0_.Id=@p0
+
+2013-12-10 09:57:12,092 [42] NHibernate.AdoNet.Util.SqlStatementLogger.LogCommand(:0) - select TOP (1)  nhidentity0_.Id as Id0_, nhidentity0_.UserName as UserName0_, nhidentity0_.PasswordHash as Password3_0_, nhidentity0_.SecurityStamp as Security4_0_, nhidentity0_.Discriminator as Discrimi5_0_, nhidentity0_.ApplicationId as Applicat6_0_, nhidentity0_.LoweredUserName as LoweredU7_0_, nhidentity0_.IsAnonymous as IsAnonym8_0_, nhidentity0_.LastActivityDate as LastActi9_0_, nhidentity0_.IsApproved as IsApproved0_, nhidentity0_.IsLockedOut as IsLocke11_0_, nhidentity0_.CreateDate as CreateDate0_, nhidentity0_.LastLoginDate as LastLog13_0_, nhidentity0_.LastPasswordChangedDate as LastPas14_0_, nhidentity0_.LastLockoutDate as LastLoc15_0_, nhidentity0_.FailedPasswordAttemptCount as FailedP16_0_, nhidentity0_.FailedPasswordAttemptWindowStart as FailedP17_0_, nhidentity0_.FailedPasswordAnswerAttemptCount as FailedP18_0_, nhidentity0_.FailedPasswordAnswerAttemptWindowStart as FailedP19_0_ from AspNetUsers nhidentity0_ where nhidentity0_.Id=@p0;@p0 = '3c5dd2c9-29d9-4adc-ba3a-eeb77323ded3' [Type: String (4000)]
+
+2013-12-10 09:57:12,096 [18] NHibernate.Loader.Loader.GetResultSet(:0) - select TOP (1)  nhidentity0_.Id as Id0_, nhidentity0_.UserName as UserName0_, nhidentity0_.PasswordHash as Password3_0_, nhidentity0_.SecurityStamp as Security4_0_, nhidentity0_.Discriminator as Discrimi5_0_, nhidentity0_.ApplicationId as Applicat6_0_, nhidentity0_.LoweredUserName as LoweredU7_0_, nhidentity0_.IsAnonymous as IsAnonym8_0_, nhidentity0_.LastActivityDate as LastActi9_0_, nhidentity0_.IsApproved as IsApproved0_, nhidentity0_.IsLockedOut as IsLocke11_0_, nhidentity0_.CreateDate as CreateDate0_, nhidentity0_.LastLoginDate as LastLog13_0_, nhidentity0_.LastPasswordChangedDate as LastPas14_0_, nhidentity0_.LastLockoutDate as LastLoc15_0_, nhidentity0_.FailedPasswordAttemptCount as FailedP16_0_, nhidentity0_.FailedPasswordAttemptWindowStart as FailedP17_0_, nhidentity0_.FailedPasswordAnswerAttemptCount as FailedP18_0_, nhidentity0_.FailedPasswordAnswerAttemptWindowStart as FailedP19_0_ from AspNetUsers nhidentity0_ where nhidentity0_.Id=@p0
+
+2013-12-10 09:57:12,097 [18] NHibernate.AdoNet.Util.SqlStatementLogger.LogCommand(:0) - select TOP (1)  nhidentity0_.Id as Id0_, nhidentity0_.UserName as UserName0_, nhidentity0_.PasswordHash as Password3_0_, nhidentity0_.SecurityStamp as Security4_0_, nhidentity0_.Discriminator as Discrimi5_0_, nhidentity0_.ApplicationId as Applicat6_0_, nhidentity0_.LoweredUserName as LoweredU7_0_, nhidentity0_.IsAnonymous as IsAnonym8_0_, nhidentity0_.LastActivityDate as LastActi9_0_, nhidentity0_.IsApproved as IsApproved0_, nhidentity0_.IsLockedOut as IsLocke11_0_, nhidentity0_.CreateDate as CreateDate0_, nhidentity0_.LastLoginDate as LastLog13_0_, nhidentity0_.LastPasswordChangedDate as LastPas14_0_, nhidentity0_.LastLockoutDate as LastLoc15_0_, nhidentity0_.FailedPasswordAttemptCount as FailedP16_0_, nhidentity0_.FailedPasswordAttemptWindowStart as FailedP17_0_, nhidentity0_.FailedPasswordAnswerAttemptCount as FailedP18_0_, nhidentity0_.FailedPasswordAnswerAttemptWindowStart as FailedP19_0_ from AspNetUsers nhidentity0_ where nhidentity0_.Id=@p0;@p0 = '3c5dd2c9-29d9-4adc-ba3a-eeb77323ded3' [Type: String (4000)]
+
+2013-12-10 09:57:26,034 [38] NHibernate.Loader.Loader.GetResultSet(:0) - select TOP (1)  nhidentity0_.Id as Id0_, nhidentity0_.UserName as UserName0_, nhidentity0_.PasswordHash as Password3_0_, nhidentity0_.SecurityStamp as Security4_0_, nhidentity0_.Discriminator as Discrimi5_0_, nhidentity0_.ApplicationId as Applicat6_0_, nhidentity0_.LoweredUserName as LoweredU7_0_, nhidentity0_.IsAnonymous as IsAnonym8_0_, nhidentity0_.LastActivityDate as LastActi9_0_, nhidentity0_.IsApproved as IsApproved0_, nhidentity0_.IsLockedOut as IsLocke11_0_, nhidentity0_.CreateDate as CreateDate0_, nhidentity0_.LastLoginDate as LastLog13_0_, nhidentity0_.LastPasswordChangedDate as LastPas14_0_, nhidentity0_.LastLockoutDate as LastLoc15_0_, nhidentity0_.FailedPasswordAttemptCount as FailedP16_0_, nhidentity0_.FailedPasswordAttemptWindowStart as FailedP17_0_, nhidentity0_.FailedPasswordAnswerAttemptCount as FailedP18_0_, nhidentity0_.FailedPasswordAnswerAttemptWindowStart as FailedP19_0_ from AspNetUsers nhidentity0_ where nhidentity0_.UserName=@p0
+
+2013-12-10 09:57:26,035 [38] NHibernate.AdoNet.Util.SqlStatementLogger.LogCommand(:0) - select TOP (1)  nhidentity0_.Id as Id0_, nhidentity0_.UserName as UserName0_, nhidentity0_.PasswordHash as Password3_0_, nhidentity0_.SecurityStamp as Security4_0_, nhidentity0_.Discriminator as Discrimi5_0_, nhidentity0_.ApplicationId as Applicat6_0_, nhidentity0_.LoweredUserName as LoweredU7_0_, nhidentity0_.IsAnonymous as IsAnonym8_0_, nhidentity0_.LastActivityDate as LastActi9_0_, nhidentity0_.IsApproved as IsApproved0_, nhidentity0_.IsLockedOut as IsLocke11_0_, nhidentity0_.CreateDate as CreateDate0_, nhidentity0_.LastLoginDate as LastLog13_0_, nhidentity0_.LastPasswordChangedDate as LastPas14_0_, nhidentity0_.LastLockoutDate as LastLoc15_0_, nhidentity0_.FailedPasswordAttemptCount as FailedP16_0_, nhidentity0_.FailedPasswordAttemptWindowStart as FailedP17_0_, nhidentity0_.FailedPasswordAnswerAttemptCount as FailedP18_0_, nhidentity0_.FailedPasswordAnswerAttemptWindowStart as FailedP19_0_ from AspNetUsers nhidentity0_ where nhidentity0_.UserName=@p0;@p0 = 'test1' [Type: String (4000)]
+
+2013-12-10 09:57:26,052 [38] NHibernate.Loader.Loader.GetResultSet(:0) - select TOP (1)  nhidentity0_.Id as Id0_, nhidentity0_.UserName as UserName0_, nhidentity0_.PasswordHash as Password3_0_, nhidentity0_.SecurityStamp as Security4_0_, nhidentity0_.Discriminator as Discrimi5_0_, nhidentity0_.ApplicationId as Applicat6_0_, nhidentity0_.LoweredUserName as LoweredU7_0_, nhidentity0_.IsAnonymous as IsAnonym8_0_, nhidentity0_.LastActivityDate as LastActi9_0_, nhidentity0_.IsApproved as IsApproved0_, nhidentity0_.IsLockedOut as IsLocke11_0_, nhidentity0_.CreateDate as CreateDate0_, nhidentity0_.LastLoginDate as LastLog13_0_, nhidentity0_.LastPasswordChangedDate as LastPas14_0_, nhidentity0_.LastLockoutDate as LastLoc15_0_, nhidentity0_.FailedPasswordAttemptCount as FailedP16_0_, nhidentity0_.FailedPasswordAttemptWindowStart as FailedP17_0_, nhidentity0_.FailedPasswordAnswerAttemptCount as FailedP18_0_, nhidentity0_.FailedPasswordAnswerAttemptWindowStart as FailedP19_0_ from AspNetUsers nhidentity0_ where nhidentity0_.Id=@p0
+
+2013-12-10 09:57:26,052 [38] NHibernate.AdoNet.Util.SqlStatementLogger.LogCommand(:0) - select TOP (1)  nhidentity0_.Id as Id0_, nhidentity0_.UserName as UserName0_, nhidentity0_.PasswordHash as Password3_0_, nhidentity0_.SecurityStamp as Security4_0_, nhidentity0_.Discriminator as Discrimi5_0_, nhidentity0_.ApplicationId as Applicat6_0_, nhidentity0_.LoweredUserName as LoweredU7_0_, nhidentity0_.IsAnonymous as IsAnonym8_0_, nhidentity0_.LastActivityDate as LastActi9_0_, nhidentity0_.IsApproved as IsApproved0_, nhidentity0_.IsLockedOut as IsLocke11_0_, nhidentity0_.CreateDate as CreateDate0_, nhidentity0_.LastLoginDate as LastLog13_0_, nhidentity0_.LastPasswordChangedDate as LastPas14_0_, nhidentity0_.LastLockoutDate as LastLoc15_0_, nhidentity0_.FailedPasswordAttemptCount as FailedP16_0_, nhidentity0_.FailedPasswordAttemptWindowStart as FailedP17_0_, nhidentity0_.FailedPasswordAnswerAttemptCount as FailedP18_0_, nhidentity0_.FailedPasswordAnswerAttemptWindowStart as FailedP19_0_ from AspNetUsers nhidentity0_ where nhidentity0_.Id=@p0;@p0 = '3c5dd2c9-29d9-4adc-ba3a-eeb77323ded3' [Type: String (4000)]
+
+2013-12-10 09:57:26,056 [38] NHibernate.Loader.Loader.GetResultSet(:0) - SELECT roles0_.UserId as UserId1_, roles0_.RoleId as RoleId1_, nhidentity1_.Id as Id2_0_, nhidentity1_.Name as Name2_0_ FROM AspNetUserRoles roles0_ left outer join AspNetRoles nhidentity1_ on roles0_.RoleId=nhidentity1_.Id WHERE roles0_.UserId=@p0
+
+2013-12-10 09:57:26,056 [38] NHibernate.AdoNet.Util.SqlStatementLogger.LogCommand(:0) - SELECT roles0_.UserId as UserId1_, roles0_.RoleId as RoleId1_, nhidentity1_.Id as Id2_0_, nhidentity1_.Name as Name2_0_ FROM AspNetUserRoles roles0_ left outer join AspNetRoles nhidentity1_ on roles0_.RoleId=nhidentity1_.Id WHERE roles0_.UserId=@p0;@p0 = '3c5dd2c9-29d9-4adc-ba3a-eeb77323ded3' [Type: String (4000)]
+
+2013-12-10 09:57:26,060 [37] NHibernate.Loader.Loader.GetResultSet(:0) - select TOP (1)  nhidentity0_.Id as Id0_, nhidentity0_.UserName as UserName0_, nhidentity0_.PasswordHash as Password3_0_, nhidentity0_.SecurityStamp as Security4_0_, nhidentity0_.Discriminator as Discrimi5_0_, nhidentity0_.ApplicationId as Applicat6_0_, nhidentity0_.LoweredUserName as LoweredU7_0_, nhidentity0_.IsAnonymous as IsAnonym8_0_, nhidentity0_.LastActivityDate as LastActi9_0_, nhidentity0_.IsApproved as IsApproved0_, nhidentity0_.IsLockedOut as IsLocke11_0_, nhidentity0_.CreateDate as CreateDate0_, nhidentity0_.LastLoginDate as LastLog13_0_, nhidentity0_.LastPasswordChangedDate as LastPas14_0_, nhidentity0_.LastLockoutDate as LastLoc15_0_, nhidentity0_.FailedPasswordAttemptCount as FailedP16_0_, nhidentity0_.FailedPasswordAttemptWindowStart as FailedP17_0_, nhidentity0_.FailedPasswordAnswerAttemptCount as FailedP18_0_, nhidentity0_.FailedPasswordAnswerAttemptWindowStart as FailedP19_0_ from AspNetUsers nhidentity0_ where nhidentity0_.Id=@p0
+
+2013-12-10 09:57:26,060 [37] NHibernate.AdoNet.Util.SqlStatementLogger.LogCommand(:0) - select TOP (1)  nhidentity0_.Id as Id0_, nhidentity0_.UserName as UserName0_, nhidentity0_.PasswordHash as Password3_0_, nhidentity0_.SecurityStamp as Security4_0_, nhidentity0_.Discriminator as Discrimi5_0_, nhidentity0_.ApplicationId as Applicat6_0_, nhidentity0_.LoweredUserName as LoweredU7_0_, nhidentity0_.IsAnonymous as IsAnonym8_0_, nhidentity0_.LastActivityDate as LastActi9_0_, nhidentity0_.IsApproved as IsApproved0_, nhidentity0_.IsLockedOut as IsLocke11_0_, nhidentity0_.CreateDate as CreateDate0_, nhidentity0_.LastLoginDate as LastLog13_0_, nhidentity0_.LastPasswordChangedDate as LastPas14_0_, nhidentity0_.LastLockoutDate as LastLoc15_0_, nhidentity0_.FailedPasswordAttemptCount as FailedP16_0_, nhidentity0_.FailedPasswordAttemptWindowStart as FailedP17_0_, nhidentity0_.FailedPasswordAnswerAttemptCount as FailedP18_0_, nhidentity0_.FailedPasswordAnswerAttemptWindowStart as FailedP19_0_ from AspNetUsers nhidentity0_ where nhidentity0_.Id=@p0;@p0 = '3c5dd2c9-29d9-4adc-ba3a-eeb77323ded3' [Type: String (4000)]
+
+2013-12-10 09:57:26,063 [37] NHibernate.Loader.Loader.GetResultSet(:0) - SELECT claims0_.User_Id as User4_1_, claims0_.Id as Id1_, claims0_.Id as Id4_0_, claims0_.ClaimType as ClaimType4_0_, claims0_.ClaimValue as ClaimValue4_0_, claims0_.User_Id as User4_4_0_ FROM AspNetUserClaims claims0_ WHERE claims0_.User_Id=@p0
+
+2013-12-10 09:57:26,063 [37] NHibernate.AdoNet.Util.SqlStatementLogger.LogCommand(:0) - SELECT claims0_.User_Id as User4_1_, claims0_.Id as Id1_, claims0_.Id as Id4_0_, claims0_.ClaimType as ClaimType4_0_, claims0_.ClaimValue as ClaimValue4_0_, claims0_.User_Id as User4_4_0_ FROM AspNetUserClaims claims0_ WHERE claims0_.User_Id=@p0;@p0 = '3c5dd2c9-29d9-4adc-ba3a-eeb77323ded3' [Type: String (4000)]
+
+2013-12-10 09:57:26,066 [34] NHibernate.Loader.Loader.GetResultSet(:0) - select TOP (1)  nhidentity0_.Id as Id0_, nhidentity0_.UserName as UserName0_, nhidentity0_.PasswordHash as Password3_0_, nhidentity0_.SecurityStamp as Security4_0_, nhidentity0_.Discriminator as Discrimi5_0_, nhidentity0_.ApplicationId as Applicat6_0_, nhidentity0_.LoweredUserName as LoweredU7_0_, nhidentity0_.IsAnonymous as IsAnonym8_0_, nhidentity0_.LastActivityDate as LastActi9_0_, nhidentity0_.IsApproved as IsApproved0_, nhidentity0_.IsLockedOut as IsLocke11_0_, nhidentity0_.CreateDate as CreateDate0_, nhidentity0_.LastLoginDate as LastLog13_0_, nhidentity0_.LastPasswordChangedDate as LastPas14_0_, nhidentity0_.LastLockoutDate as LastLoc15_0_, nhidentity0_.FailedPasswordAttemptCount as FailedP16_0_, nhidentity0_.FailedPasswordAttemptWindowStart as FailedP17_0_, nhidentity0_.FailedPasswordAnswerAttemptCount as FailedP18_0_, nhidentity0_.FailedPasswordAnswerAttemptWindowStart as FailedP19_0_ from AspNetUsers nhidentity0_ where nhidentity0_.Id=@p0
+
+2013-12-10 09:57:26,067 [34] NHibernate.AdoNet.Util.SqlStatementLogger.LogCommand(:0) - select TOP (1)  nhidentity0_.Id as Id0_, nhidentity0_.UserName as UserName0_, nhidentity0_.PasswordHash as Password3_0_, nhidentity0_.SecurityStamp as Security4_0_, nhidentity0_.Discriminator as Discrimi5_0_, nhidentity0_.ApplicationId as Applicat6_0_, nhidentity0_.LoweredUserName as LoweredU7_0_, nhidentity0_.IsAnonymous as IsAnonym8_0_, nhidentity0_.LastActivityDate as LastActi9_0_, nhidentity0_.IsApproved as IsApproved0_, nhidentity0_.IsLockedOut as IsLocke11_0_, nhidentity0_.CreateDate as CreateDate0_, nhidentity0_.LastLoginDate as LastLog13_0_, nhidentity0_.LastPasswordChangedDate as LastPas14_0_, nhidentity0_.LastLockoutDate as LastLoc15_0_, nhidentity0_.FailedPasswordAttemptCount as FailedP16_0_, nhidentity0_.FailedPasswordAttemptWindowStart as FailedP17_0_, nhidentity0_.FailedPasswordAnswerAttemptCount as FailedP18_0_, nhidentity0_.FailedPasswordAnswerAttemptWindowStart as FailedP19_0_ from AspNetUsers nhidentity0_ where nhidentity0_.Id=@p0;@p0 = '3c5dd2c9-29d9-4adc-ba3a-eeb77323ded3' [Type: String (4000)]
+
+2013-12-10 09:57:26,070 [37] NHibernate.Loader.Loader.GetResultSet(:0) - select TOP (1)  nhidentity0_.Id as Id0_, nhidentity0_.UserName as UserName0_, nhidentity0_.PasswordHash as Password3_0_, nhidentity0_.SecurityStamp as Security4_0_, nhidentity0_.Discriminator as Discrimi5_0_, nhidentity0_.ApplicationId as Applicat6_0_, nhidentity0_.LoweredUserName as LoweredU7_0_, nhidentity0_.IsAnonymous as IsAnonym8_0_, nhidentity0_.LastActivityDate as LastActi9_0_, nhidentity0_.IsApproved as IsApproved0_, nhidentity0_.IsLockedOut as IsLocke11_0_, nhidentity0_.CreateDate as CreateDate0_, nhidentity0_.LastLoginDate as LastLog13_0_, nhidentity0_.LastPasswordChangedDate as LastPas14_0_, nhidentity0_.LastLockoutDate as LastLoc15_0_, nhidentity0_.FailedPasswordAttemptCount as FailedP16_0_, nhidentity0_.FailedPasswordAttemptWindowStart as FailedP17_0_, nhidentity0_.FailedPasswordAnswerAttemptCount as FailedP18_0_, nhidentity0_.FailedPasswordAnswerAttemptWindowStart as FailedP19_0_ from AspNetUsers nhidentity0_ where nhidentity0_.Id=@p0
+
+2013-12-10 09:57:26,070 [37] NHibernate.AdoNet.Util.SqlStatementLogger.LogCommand(:0) - select TOP (1)  nhidentity0_.Id as Id0_, nhidentity0_.UserName as UserName0_, nhidentity0_.PasswordHash as Password3_0_, nhidentity0_.SecurityStamp as Security4_0_, nhidentity0_.Discriminator as Discrimi5_0_, nhidentity0_.ApplicationId as Applicat6_0_, nhidentity0_.LoweredUserName as LoweredU7_0_, nhidentity0_.IsAnonymous as IsAnonym8_0_, nhidentity0_.LastActivityDate as LastActi9_0_, nhidentity0_.IsApproved as IsApproved0_, nhidentity0_.IsLockedOut as IsLocke11_0_, nhidentity0_.CreateDate as CreateDate0_, nhidentity0_.LastLoginDate as LastLog13_0_, nhidentity0_.LastPasswordChangedDate as LastPas14_0_, nhidentity0_.LastLockoutDate as LastLoc15_0_, nhidentity0_.FailedPasswordAttemptCount as FailedP16_0_, nhidentity0_.FailedPasswordAttemptWindowStart as FailedP17_0_, nhidentity0_.FailedPasswordAnswerAttemptCount as FailedP18_0_, nhidentity0_.FailedPasswordAnswerAttemptWindowStart as FailedP19_0_ from AspNetUsers nhidentity0_ where nhidentity0_.Id=@p0;@p0 = '3c5dd2c9-29d9-4adc-ba3a-eeb77323ded3' [Type: String (4000)]
+
+2013-12-10 09:57:29,949 [40] NHibernate.Loader.Loader.GetResultSet(:0) - select TOP (1)  nhidentity0_.Id as Id0_, nhidentity0_.UserName as UserName0_, nhidentity0_.PasswordHash as Password3_0_, nhidentity0_.SecurityStamp as Security4_0_, nhidentity0_.Discriminator as Discrimi5_0_, nhidentity0_.ApplicationId as Applicat6_0_, nhidentity0_.LoweredUserName as LoweredU7_0_, nhidentity0_.IsAnonymous as IsAnonym8_0_, nhidentity0_.LastActivityDate as LastActi9_0_, nhidentity0_.IsApproved as IsApproved0_, nhidentity0_.IsLockedOut as IsLocke11_0_, nhidentity0_.CreateDate as CreateDate0_, nhidentity0_.LastLoginDate as LastLog13_0_, nhidentity0_.LastPasswordChangedDate as LastPas14_0_, nhidentity0_.LastLockoutDate as LastLoc15_0_, nhidentity0_.FailedPasswordAttemptCount as FailedP16_0_, nhidentity0_.FailedPasswordAttemptWindowStart as FailedP17_0_, nhidentity0_.FailedPasswordAnswerAttemptCount as FailedP18_0_, nhidentity0_.FailedPasswordAnswerAttemptWindowStart as FailedP19_0_ from AspNetUsers nhidentity0_ where nhidentity0_.Id=@p0
+
+2013-12-10 09:57:29,949 [40] NHibernate.AdoNet.Util.SqlStatementLogger.LogCommand(:0) - select TOP (1)  nhidentity0_.Id as Id0_, nhidentity0_.UserName as UserName0_, nhidentity0_.PasswordHash as Password3_0_, nhidentity0_.SecurityStamp as Security4_0_, nhidentity0_.Discriminator as Discrimi5_0_, nhidentity0_.ApplicationId as Applicat6_0_, nhidentity0_.LoweredUserName as LoweredU7_0_, nhidentity0_.IsAnonymous as IsAnonym8_0_, nhidentity0_.LastActivityDate as LastActi9_0_, nhidentity0_.IsApproved as IsApproved0_, nhidentity0_.IsLockedOut as IsLocke11_0_, nhidentity0_.CreateDate as CreateDate0_, nhidentity0_.LastLoginDate as LastLog13_0_, nhidentity0_.LastPasswordChangedDate as LastPas14_0_, nhidentity0_.LastLockoutDate as LastLoc15_0_, nhidentity0_.FailedPasswordAttemptCount as FailedP16_0_, nhidentity0_.FailedPasswordAttemptWindowStart as FailedP17_0_, nhidentity0_.FailedPasswordAnswerAttemptCount as FailedP18_0_, nhidentity0_.FailedPasswordAnswerAttemptWindowStart as FailedP19_0_ from AspNetUsers nhidentity0_ where nhidentity0_.Id=@p0;@p0 = '3c5dd2c9-29d9-4adc-ba3a-eeb77323ded3' [Type: String (4000)]
+
+2013-12-10 09:57:29,978 [40] NHibernate.Loader.Loader.GetResultSet(:0) - SELECT logins0_.UserId as UserId1_, logins0_.LoginProvider as LoginPro1_1_, logins0_.ProviderKey as Provider2_1_, logins0_.LoginProvider as LoginPro1_3_0_, logins0_.ProviderKey as Provider2_3_0_, logins0_.UserId as UserId3_0_ FROM AspNetUserLogins logins0_ WHERE logins0_.UserId=@p0
+
+2013-12-10 09:57:29,981 [40] NHibernate.AdoNet.Util.SqlStatementLogger.LogCommand(:0) - SELECT logins0_.UserId as UserId1_, logins0_.LoginProvider as LoginPro1_1_, logins0_.ProviderKey as Provider2_1_, logins0_.LoginProvider as LoginPro1_3_0_, logins0_.ProviderKey as Provider2_3_0_, logins0_.UserId as UserId3_0_ FROM AspNetUserLogins logins0_ WHERE logins0_.UserId=@p0;@p0 = '3c5dd2c9-29d9-4adc-ba3a-eeb77323ded3' [Type: String (4000)]
 

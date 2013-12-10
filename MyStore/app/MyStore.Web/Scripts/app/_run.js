@@ -22,12 +22,12 @@
     shim: {
         "bootstrap": ["jquery"],
         "knockout.validation": ["knockout"]
-    },
+    }/*,
     map: {
         'knockout.validation': {
             'knockout': 'ko'
         }
-    }
+    }*/
 });
 
 /*
