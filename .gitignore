@@ -1,1 +1,5 @@
 packages
+/MyStore/app/MyStore.Domain/bin
+/MyStore/app/MyStore.Domain/obj
+bin
+obj

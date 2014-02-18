@@ -54,7 +54,7 @@ namespace MyStore.NHibernateProvider
                 var lastCompiledXml = mapping.AsString();
                 configuration.AddDeserializedMapping(mapping, "IdentityMappings");
 
-                //mapper.WithConventions(configuration);
+                mapper.WithConventions(configuration);
                 
                 cache.SaveConfiguration(CONFIG_CACHE_KEY, configuration);
             }

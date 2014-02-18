@@ -5,9 +5,8 @@
         "bootstrap": "bootstrap.min",
         "knockout": "knockout-2.3.0",
         "knockout.validation": "knockout.validation",
-        
-        
         "sammy": "sammy-0.7.4",
+        
         "ajaxPrefilters": "app/ajaxPrefilters",
         "app.bindings": "app/app.bindings",
         "app.datamodel": "app/app.datamodel",
@@ -30,7 +29,7 @@ require(["knockout"], function (ko) {
     window.ko = ko;
 
     //then bring in knockout validation
-    require(["jquery", "knockout", "app.viewmodel", "knockout.validation", "domReady!"], function ($, k, app, kovalidation) {
+    require(["jquery", "knockout", "app/app.viewmodel", "knockout.validation", "domReady!"], function ($, k, app) {
 
         // Activate Knockout
         ko.validation.init({ grouping: { observable: false } });

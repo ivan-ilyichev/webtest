@@ -21,7 +21,7 @@
     </UpgradeBackupLocation>
     <OldToolsVersion>4.0</OldToolsVersion>
     <MvcProjectUpgradeChecked>true</MvcProjectUpgradeChecked>
-    <UseIISExpress>false</UseIISExpress>
+    <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -253,6 +253,14 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\domReady.js" />
+    <Content Include="Scripts\fileupload\css\style.css" />
+    <Content Include="Scripts\fileupload\img\border-image.png" />
+    <Content Include="Scripts\fileupload\img\icons.png" />
+    <Content Include="Scripts\fileupload\js\jquery.fileupload.js" />
+    <Content Include="Scripts\fileupload\js\jquery.iframe-transport.js" />
+    <Content Include="Scripts\fileupload\js\jquery.knob.js" />
+    <Content Include="Scripts\fileupload\js\jquery.ui.widget.js" />
+    <Content Include="Scripts\fileupload\js\script.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\knockout-2.3.0.debug.js" />
@@ -386,7 +394,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>55462</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://webtest.local</IISUrl>
+          <IISUrl>http://localhost:55462/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
