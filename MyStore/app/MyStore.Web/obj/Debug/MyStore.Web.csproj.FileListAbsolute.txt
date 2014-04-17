@@ -169,3 +169,7 @@ C:\BoxFusion\webtest\MyStore\app\MyStore.Web\bin\MyStore.NHibernateProvider.pdb
 C:\BoxFusion\webtest\MyStore\app\MyStore.Web\obj\Debug\MyStore.Web.csprojResolveAssemblyReference.cache
 C:\BoxFusion\webtest\MyStore\app\MyStore.Web\obj\Debug\MyStore.Web.dll
 C:\BoxFusion\webtest\MyStore\app\MyStore.Web\obj\Debug\MyStore.Web.pdb
+D:\BoxFusion\webtest\MyStore\app\MyStore.Web\bin\Microsoft.AspNet.SignalR.Core.dll
+D:\BoxFusion\webtest\MyStore\app\MyStore.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+D:\BoxFusion\webtest\MyStore\app\MyStore.Web\bin\Microsoft.AspNet.SignalR.Core.xml
+D:\BoxFusion\webtest\MyStore\app\MyStore.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
