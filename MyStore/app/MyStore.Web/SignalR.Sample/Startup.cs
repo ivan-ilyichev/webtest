@@ -1,7 +1,4 @@
-﻿using Microsoft.Owin;
-using Owin;
-
-[assembly: OwinStartup(typeof(Microsoft.AspNet.SignalR.StockTicker.Startup), "ConfigureSignalR")]
+﻿using Owin;
 
 namespace Microsoft.AspNet.SignalR.StockTicker
 {

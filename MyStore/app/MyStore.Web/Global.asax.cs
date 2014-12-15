@@ -28,6 +28,11 @@ namespace MyStore.Web
         }
 
         protected void Application_Start() {
+            // Init Aspose.Words license
+            var license = new Aspose.Words.License();
+            license.SetLicense("Aspose.Words.lic");
+            
+
             log4net.Config.XmlConfigurator.Configure();
             DependencyResolverInitializer.Initialize();
 

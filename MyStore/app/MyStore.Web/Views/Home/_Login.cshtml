@@ -1,4 +1,6 @@
-﻿<!-- ko with: login -->
+﻿@using TwitterBootstrap3
+@using TwitterBootstrapMVC
+<!-- ko with: login -->
 <h2>Log in</h2>
 
 <div class="row">
@@ -35,7 +37,7 @@
                 </div>
             </div>
             <p><a href="#" data-bind="click: register">Register</a> if you don't have a local account.</p>
-
+            
         </form>
     </section>
     <section class="col-md-4">
@@ -57,4 +59,15 @@
         </div>
     </section>
 </div>
+@*
+@using (var f = Html.Bootstrap().Begin(new Form()))
+{
+    @f.FormGroup().TextBoxFor(x => x.Email).Placeholder("Enter email")
+    @f.FormGroup().PasswordFor(x => x.Password).Placeholder()
+    @f.FormGroup().FileFor(x => x.SomeFile).HelpText("Example block-level help text here.")
+    @f.FormGroup().CheckBoxFor(x => x.CheckMeOut)
+    @Html.Bootstrap().SubmitButton()
+}
+*@
+
 <!-- /ko -->
