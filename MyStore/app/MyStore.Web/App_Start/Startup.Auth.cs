@@ -2,6 +2,7 @@
 using Microsoft.AspNet.Identity;
 using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
+using Microsoft.Owin.Security.Google;
 using Microsoft.Owin.Security.OAuth;
 using MyStore.Domain;
 using MyStore.Domain.Security;
@@ -63,7 +64,19 @@ namespace MyStore.Web
             //    appId: "",
             //    appSecret: "");
 
-            app.UseGoogleAuthentication();
+            //app.UseGoogleAuthentication();
+
+            app.UseFacebookAuthentication(
+                appId: "842300665832308",
+                appSecret: "0510d35e25faeeba3b9531cb0cc78fd4");
+
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "384482312207-anp3fb6b4ceiqhv6cibm9vil86miec75.apps.googleusercontent.com",
+                ClientSecret = "W4W-BmdvVtD6DIqEFByLdUrr",
+                CallbackPath = new PathString("/signin-google")
+                //CallbackPath = new PathString("/Account/ExternalLoginCallback")
+            });
         }
     }
 }

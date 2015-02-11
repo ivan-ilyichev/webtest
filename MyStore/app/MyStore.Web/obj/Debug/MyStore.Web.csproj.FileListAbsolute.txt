@@ -195,3 +195,5 @@ D:\BoxFusion\webtest\MyStore\app\MyStore.Web\bin\Iesi.Collections.xml
 D:\BoxFusion\webtest\MyStore\app\MyStore.Web\bin\Lucene.Net.pdb
 D:\BoxFusion\webtest\MyStore\app\MyStore.Web\bin\NHibernate.xml
 D:\BoxFusion\webtest\MyStore\app\MyStore.Web\bin\Portable.Licensing.xml
+D:\BoxFusion\webtest\MyStore\app\MyStore.Web\bin\Microsoft.Owin.Security.Facebook.dll
+D:\BoxFusion\webtest\MyStore\app\MyStore.Web\bin\Microsoft.Owin.Security.Facebook.xml
