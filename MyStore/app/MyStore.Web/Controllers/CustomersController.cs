@@ -7,6 +7,7 @@ using MyStore.Domain.Queries;
 
 namespace MyStore.Web.Areas.CustomerMgmt.Controllers
 {
+    [Authorize]
     public class CustomersController : Controller
     {
         public CustomersController(IRepository<Customer> customerRepository, 

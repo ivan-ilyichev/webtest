@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Configuration;
 using Microsoft.AspNet.Identity;
 using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
@@ -66,14 +67,29 @@ namespace MyStore.Web
 
             //app.UseGoogleAuthentication();
 
+            /* Ivan's account test
             app.UseFacebookAuthentication(
                 appId: "842300665832308",
                 appSecret: "0510d35e25faeeba3b9531cb0cc78fd4");
-
+            */
+            
+            //  Wozawow Ivan test app
+            app.UseFacebookAuthentication(
+                appId: "721133778006415",
+                appSecret: "5ee329e65cf2225f51cd3bdfb4a7cec3");
+            
+            // Wozawow
+            
+            /*
+            app.UseFacebookAuthentication(
+                appId: "720737971379329",
+                appSecret: "2bb2e66905f9f909fd7f974c273fd10f");
+            
+            */
             app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             {
-                ClientId = "384482312207-anp3fb6b4ceiqhv6cibm9vil86miec75.apps.googleusercontent.com",
-                ClientSecret = "W4W-BmdvVtD6DIqEFByLdUrr",
+                ClientId = "372895005306-r6slka4gc31fq6vf446qs4q9t591t32g.apps.googleusercontent.com",
+                ClientSecret = "PtRJgRLGiDCAmodJlUGNmf7a",
                 CallbackPath = new PathString("/signin-google")
                 //CallbackPath = new PathString("/Account/ExternalLoginCallback")
             });

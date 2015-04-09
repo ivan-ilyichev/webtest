@@ -1,60 +1,60 @@
-2015-02-11 15:56:53,714 [6] ?.lambda_method(:0) - NHibernate 4.0.0.GA (assembly 4.0.0.4000)
+2015-03-31 12:09:56,402 [7] NHibernate.Cfg.Environment..cctor(:0) - NHibernate 4.0.0.GA (assembly 4.0.0.4000)
 
-2015-02-11 15:56:53,719 [6] ?.lambda_method(:0) - hibernate-configuration section not found in application configuration file
+2015-03-31 12:09:56,434 [7] NHibernate.Cfg.Environment.LoadGlobalPropertiesFromAppConfig(:0) - hibernate-configuration section not found in application configuration file
 
-2015-02-11 15:56:53,720 [6] ?.lambda_method(:0) - Bytecode provider name : lcg
+2015-03-31 12:09:56,436 [7] NHibernate.Cfg.Environment.BuildBytecodeProvider(:0) - Bytecode provider name : lcg
 
-2015-02-11 15:56:53,722 [6] ?.lambda_method(:0) - Using reflection optimizer
+2015-03-31 12:09:56,438 [7] NHibernate.Cfg.Configuration.Reset(:0) - Using reflection optimizer
 
-2015-02-11 15:56:53,747 [6] ?.lambda_method(:0) - checking mappings queue
+2015-03-31 12:09:56,503 [7] NHibernate.Cfg.Configuration.SecondPassCompile(:0) - checking mappings queue
 
-2015-02-11 15:56:53,748 [6] ?.lambda_method(:0) - processing one-to-many association mappings
+2015-03-31 12:09:56,504 [7] NHibernate.Cfg.Configuration.SecondPassCompile(:0) - processing one-to-many association mappings
 
-2015-02-11 15:56:53,748 [6] ?.lambda_method(:0) - processing one-to-one association property references
+2015-03-31 12:09:56,505 [7] NHibernate.Cfg.Configuration.SecondPassCompile(:0) - processing one-to-one association property references
 
-2015-02-11 15:56:53,748 [6] ?.lambda_method(:0) - processing foreign key constraints
+2015-03-31 12:09:56,505 [7] NHibernate.Cfg.Configuration.SecondPassCompile(:0) - processing foreign key constraints
 
-2015-02-11 15:56:53,750 [6] ?.lambda_method(:0) - processing filters (second pass)
+2015-03-31 12:09:56,511 [7] NHibernate.Cfg.Configuration.SecondPassCompile(:0) - processing filters (second pass)
 
-2015-02-11 15:56:53,775 [6] ?.lambda_method(:0) - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2015-03-31 12:09:56,586 [7] NHibernate.Dialect.Dialect..ctor(:0) - Using dialect: NHibernate.Dialect.MsSql2008Dialect
 
-2015-02-11 15:56:53,798 [6] ?.lambda_method(:0) - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2015-03-31 12:09:56,650 [7] NHibernate.Dialect.Dialect..ctor(:0) - Using dialect: NHibernate.Dialect.MsSql2008Dialect
 
-2015-02-11 15:56:53,843 [6] ?.lambda_method(:0) - Using dialect defined converter
+2015-03-31 12:09:56,745 [7] NHibernate.Exceptions.SQLExceptionConverterFactory.BuildSQLExceptionConverter(:0) - Using dialect defined converter
 
-2015-02-11 15:56:53,844 [6] ?.lambda_method(:0) - Generate SQL with comments: disabled
+2015-03-31 12:09:56,746 [7] NHibernate.Cfg.SettingsFactory.BuildSettings(:0) - Generate SQL with comments: disabled
 
-2015-02-11 15:56:53,845 [6] ?.lambda_method(:0) - Configuring ConnectionProvider
+2015-03-31 12:09:56,749 [7] NHibernate.Connection.ConnectionProvider.Configure(:0) - Configuring ConnectionProvider
 
-2015-02-11 15:56:53,846 [6] ?.lambda_method(:0) - Transaction factory: NHibernate.Transaction.AdoNetWithDistributedTransactionFactory
+2015-03-31 12:09:56,753 [7] NHibernate.Cfg.SettingsFactory.CreateTransactionFactory(:0) - Transaction factory: NHibernate.Transaction.AdoNetWithDistributedTransactionFactory
 
-2015-02-11 15:56:53,847 [6] ?.lambda_method(:0) - Optimize cache for minimal puts: False
+2015-03-31 12:09:56,754 [7] NHibernate.Cfg.SettingsFactory.BuildSettings(:0) - Optimize cache for minimal puts: False
 
-2015-02-11 15:56:53,847 [6] ?.lambda_method(:0) - Connection release mode: auto
+2015-03-31 12:09:56,754 [7] NHibernate.Cfg.SettingsFactory.BuildSettings(:0) - Connection release mode: auto
 
-2015-02-11 15:56:53,847 [6] ?.lambda_method(:0) - Default batch fetch size: 1
+2015-03-31 12:09:56,755 [7] NHibernate.Cfg.SettingsFactory.BuildSettings(:0) - Default batch fetch size: 1
 
-2015-02-11 15:56:53,847 [6] ?.lambda_method(:0) - Statistics: disabled
+2015-03-31 12:09:56,755 [7] NHibernate.Cfg.SettingsFactory.BuildSettings(:0) - Statistics: disabled
 
-2015-02-11 15:56:53,848 [6] ?.lambda_method(:0) - Deleted entity synthetic identifier rollback: disabled
+2015-03-31 12:09:56,755 [7] NHibernate.Cfg.SettingsFactory.BuildSettings(:0) - Deleted entity synthetic identifier rollback: disabled
 
-2015-02-11 15:56:53,848 [6] ?.lambda_method(:0) - Query translator: NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory
+2015-03-31 12:09:56,756 [7] NHibernate.Cfg.SettingsFactory.CreateQueryTranslatorFactory(:0) - Query translator: NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory
 
-2015-02-11 15:56:53,850 [6] ?.lambda_method(:0) - Query language substitutions: {'true'='1', 'false'='0', 'yes'=''Y'', 'no'=''N''}
+2015-03-31 12:09:56,761 [7] NHibernate.Cfg.SettingsFactory.BuildSettings(:0) - Query language substitutions: {'true'='1', 'false'='0', 'yes'=''Y'', 'no'=''N''}
 
-2015-02-11 15:56:53,851 [6] ?.lambda_method(:0) - cache provider: NHibernate.Cache.NoCacheProvider, NHibernate, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2015-03-31 12:09:56,764 [7] NHibernate.Cfg.SettingsFactory.CreateCacheProvider(:0) - cache provider: NHibernate.Cache.NoCacheProvider, NHibernate, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
 
-2015-02-11 15:56:53,852 [6] ?.lambda_method(:0) - Order SQL inserts for batching: enabled
+2015-03-31 12:09:56,764 [7] NHibernate.Cfg.SettingsFactory.BuildSettings(:0) - Order SQL inserts for batching: enabled
 
-2015-02-11 15:56:53,852 [6] ?.lambda_method(:0) - Batcher factory: NHibernate.AdoNet.SqlClientBatchingBatcherFactory, NHibernate, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2015-03-31 12:09:56,766 [7] NHibernate.Cfg.SettingsFactory.CreateBatcherFactory(:0) - Batcher factory: NHibernate.AdoNet.SqlClientBatchingBatcherFactory, NHibernate, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
 
-2015-02-11 15:56:53,853 [6] ?.lambda_method(:0) - Default entity-mode: Poco
+2015-03-31 12:09:56,767 [7] NHibernate.Cfg.SettingsFactory.BuildSettings(:0) - Default entity-mode: Poco
 
-2015-02-11 15:56:53,853 [6] ?.lambda_method(:0) - Named query checking : enabled
+2015-03-31 12:09:56,768 [7] NHibernate.Cfg.SettingsFactory.BuildSettings(:0) - Named query checking : enabled
 
-2015-02-11 15:56:53,853 [6] ?.lambda_method(:0) - Ignoring exceptions in BeforeTransactionCompletion : disabled
+2015-03-31 12:09:56,768 [7] NHibernate.Cfg.SettingsFactory.BuildSettings(:0) - Ignoring exceptions in BeforeTransactionCompletion : disabled
 
-2015-02-11 15:56:53,864 [6] ?.lambda_method(:0) - building session factory
+2015-03-31 12:09:56,798 [7] NHibernate.Impl.SessionFactoryImpl..ctor(:0) - building session factory
 
-2015-02-11 15:56:54,119 [6] ?.lambda_method(:0) - no name configured
+2015-03-31 12:09:57,423 [7] NHibernate.Impl.SessionFactoryObjectFactory.AddInstance(:0) - no name configured
 
