@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{EAA774FA-8EA7-4CE4-A406-16D7CE0BC4C1}"
 EndProject
@@ -16,6 +16,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyStore.Tests", "app\MyStore.Tests\MyStore.Tests.csproj", "{CEF24DDD-1D15-42BC-B035-4A33388C3F8C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyStore.Init", "app\MyStore.Init\MyStore.Init.csproj", "{7112AC6B-C406-481D-99D4-56BA796B7173}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helpers", "..\lib\Helpers\Helpers\Helpers.csproj", "{D2A7B164-86A8-4D18-B252-FC0F8A3D3896}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +49,10 @@ Global
 		{7112AC6B-C406-481D-99D4-56BA796B7173}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7112AC6B-C406-481D-99D4-56BA796B7173}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7112AC6B-C406-481D-99D4-56BA796B7173}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2A7B164-86A8-4D18-B252-FC0F8A3D3896}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2A7B164-86A8-4D18-B252-FC0F8A3D3896}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2A7B164-86A8-4D18-B252-FC0F8A3D3896}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2A7B164-86A8-4D18-B252-FC0F8A3D3896}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
